@@ -1,0 +1,25 @@
+/* Brandomedia Theme Styles */
+
+:root {
+  --primary-color: #f97316; /* orange-500 */
+  --primary-dark: #ea580c; /* orange-600 */
+  --secondary-color: #1f2937; /* gray-800 */
+  --text-color: #111827;
+  --text-light: #6b7280;
+  --bg-color: #ffffff;
+  --bg-dark: #111827;
+}
+
+/* Custom utilities */
+.primary-button {
+  @apply bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors;
+}
+
+.section-padding {
+  @apply py-16 px-4;
+}
+
+.container-padding {
+  @apply container mx-auto px-4;
+}
+
