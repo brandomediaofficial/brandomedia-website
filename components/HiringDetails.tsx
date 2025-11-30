@@ -53,7 +53,7 @@ export default function HiringDetails() {
           {/* Image Side - Colorful Mural */}
           <div className="relative h-[600px] md:h-[800px] rounded-lg overflow-hidden order-1 md:order-2">
             <Image
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1200&fit=crop"
+              src="/images/hiring_details.webp"
               alt="Creative Mural Art"
               fill
               className="object-cover"

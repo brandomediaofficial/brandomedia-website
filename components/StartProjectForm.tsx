@@ -19,7 +19,7 @@ export default function StartProjectForm() {
       {/* Background Image Overlay */}
       <div 
         className="absolute inset-0 z-0 opacity-20 bg-cover bg-center"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=900&fit=crop")' }}
+        style={{ backgroundImage: 'url("/images/start_project.webp")' }}
       ></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -92,8 +92,8 @@ export default function StartProjectForm() {
               </div>
 
               <div>
-                <select className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500 appearance-none">
-                  <option value="" disabled selected>Monthly Marketing Budget</option>
+                <select defaultValue="" className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500 appearance-none">
+                  <option value="" disabled>Monthly Marketing Budget</option>
                   <option value="low">&lt; $1,000</option>
                   <option value="medium">$1,000 - $5,000</option>
                   <option value="high">$5,000+</option>

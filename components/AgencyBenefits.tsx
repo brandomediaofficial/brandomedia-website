@@ -8,7 +8,7 @@ export default function AgencyBenefits() {
           {/* Image Side - Abstract Blue Wave */}
           <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&h=1000&fit=crop"
+              src="/images/agency_beneifts.webp"
               alt="Digital Marketing Abstract"
               fill
               className="object-cover"

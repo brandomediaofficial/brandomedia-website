@@ -16,7 +16,7 @@ export default function VideoProduction() {
           {/* Image Side */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop"
+              src="/images/video_production.webp"
               alt="Video Production"
               fill
               className="object-cover"

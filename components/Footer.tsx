@@ -12,7 +12,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaClock,
-  FaPinterest,
+  FaFacebook,
   FaYoutube,
   FaInstagram,
   FaLinkedin,
@@ -94,23 +94,13 @@ export default function Footer() {
                 <div>
                   <h4 className="font-bold mb-1">Pondicherry</h4>
                   <p className="text-gray-600">
-                    No 1, First Floor, Nanbargal Nagar, Reddiarpalayam, Puducherry, 605010
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-xl mt-1" />
-                <div>
-                  <h4 className="font-bold mb-1">Pondicherry</h4>
-                  <p className="text-gray-600">
-                    NO 26, ANANDAPURAM, LAWSPET, PAKKAMUDYAN PET, Puducherry, Puducherry 605008 India
+                    No 12, illangoadigal street, Mudaliarpet, Puducherry, 605001
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 font-bold text-gray-800">
-                Bangalore | Chennai | Pondicherry | Mumbai
+                Bangalore | Chennai | Pondicherry
               </div>
             </div>
 
@@ -119,14 +109,12 @@ export default function Footer() {
               <div className="flex items-center gap-3 md:flex-row-reverse">
                 <FaPhoneAlt className="text-xl" />
                 <div className="text-left md:text-right font-bold text-lg">
-                  <p>+91-9600290814</p>
-                  <p>+91-8825874052</p>
-                  <p>+91 80989 99268</p>
+                  <p>+91-7548880026</p>
                 </div>
               </div>
 
               <div className="flex gap-4 text-2xl text-black">
-                <a href="#" className="hover:text-[#090565]"><FaPinterest /></a>
+                <a href="#" className="hover:text-[#090565]"><FaFacebook /></a>
                 <a href="#" className="hover:text-[#090565]"><FaYoutube /></a>
                 <a href="#" className="hover:text-[#090565]"><FaInstagram /></a>
                 <a href="#" className="hover:text-[#090565]"><FaLinkedin /></a>
@@ -147,7 +135,7 @@ export default function Footer() {
       {/* Copyright Bar */}
       <div className="bg-black text-white py-4 text-center text-sm">
         <div className="container mx-auto px-4">
-          <p>© 2024 Brandomedia. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Brandomedia. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

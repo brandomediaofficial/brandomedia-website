@@ -46,7 +46,7 @@ export default function BrandingServices() {
           {/* Image Side */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop"
+              src="/images/branding_services.webp"
               alt="Branding Services"
               fill
               className="object-cover"

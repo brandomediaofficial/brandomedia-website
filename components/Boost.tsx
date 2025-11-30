@@ -52,7 +52,7 @@ export default function Boost() {
                 <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
                      {/* Using the VR image */}
                      <Image 
-                        src="/images/boost-vr.png" 
+                        src="/images/boost-vr.webp" 
                         alt="VR Experience" 
                         fill
                         className="object-cover"

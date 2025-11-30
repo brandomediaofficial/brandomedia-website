@@ -17,7 +17,7 @@ export default function WebDesignServices() {
           {/* Image Side */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+              src="/images/web_design_service.webp"
               alt="Web Design Services"
               fill
               className="object-cover"

@@ -5,8 +5,8 @@ export default function Hero() {
     <section className="relative h-screen md:h-[80vh] w-full bg-brandomedia-blue overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-80"
-        style={{ backgroundImage: "url('/images/hero-face.png')" }}
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/hero-face.webp')" }}
       ></div>
       
       {/* Overlay Gradient (optional, to match the dark blue tint if the image itself isn't dark enough) */}
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="text-white flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
                     Leading Digital Marketing and <br/>
-                    Video Production Agency in Pondicherry
+                    Web Development Agency in Pondicherry
                 </h2>
                 <p className="text-sm md:text-base mb-8 text-gray-200 leading-relaxed max-w-lg">
                     In addition to social media marketing, we additionally provide branding,
