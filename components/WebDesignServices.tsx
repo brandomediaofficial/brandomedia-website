@@ -1,0 +1,59 @@
+import Image from "next/image";
+
+export default function WebDesignServices() {
+  const services = [
+    "E-Commerce Website",
+    "CMS Website",
+    "Corporate Website",
+    "HTML 5 Website",
+    "Wordpress Website",
+    "Shopify Website"
+  ];
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* Image Side */}
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+              alt="Web Design Services"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Content Side */}
+          <div className="space-y-6">
+            <div>
+              <p className="text-[#090565] font-semibold text-sm mb-2">
+                Brandomedia Web Design Services
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase">
+                SEO SERVICES DRIVEN BY RESULTS
+              </h2>
+            </div>
+
+            <p className="text-gray-600">
+              Hire us to deliver organic results for your business and crush your competition.
+            </p>
+
+            <div className="space-y-2">
+              {services.map((service, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="text-[#090565] font-bold">•</span>
+                  <span className="font-semibold text-gray-900">{service}</span>
+                </div>
+              ))}
+            </div>
+
+            <button className="border-2 border-[#090565] text-[#090565] px-8 py-2 rounded font-bold hover:bg-[#090565] hover:text-white transition-colors">
+              Get a Free Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
