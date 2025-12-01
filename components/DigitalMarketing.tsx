@@ -17,7 +17,7 @@ export default function DigitalMarketing() {
           {/* Content Side */}
           <div className="space-y-6 order-2 md:order-1">
             <div>
-              <p className="text-[#090565] font-semibold text-sm mb-2">
+              <p className="text-[black] font-semibold text-sm mb-2">
                 Digital Transformation &amp; Traffic Building
               </p>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -32,13 +32,13 @@ export default function DigitalMarketing() {
             <div className="space-y-2">
               {services.map((service, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <span className="text-[#090565] font-bold">•</span>
+                  <span className="text-[black] font-bold">•</span>
                   <span className="font-semibold text-gray-900">{service}</span>
                 </div>
               ))}
             </div>
 
-            <button className="border-2 border-[#090565] text-[#090565] px-8 py-2 rounded font-bold hover:bg-[#090565] hover:text-white transition-colors">
+            <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
               Get a Free Quote
             </button>
           </div>

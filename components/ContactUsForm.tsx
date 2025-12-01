@@ -1,4 +1,4 @@
-export default function StartProjectForm() {
+export default function ContactUsForm() {
   const services = [
     "Social Media Marketing",
     "Website Development",
@@ -40,7 +40,7 @@ export default function StartProjectForm() {
                 <input 
                   type="text" 
                   placeholder="Name *" 
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                   required
                 />
               </div>
@@ -53,7 +53,7 @@ export default function StartProjectForm() {
                       <input 
                         type="checkbox" 
                         id={`service-${index}`}
-                        className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                        className="w-5 h-5 rounded border-gray-300 text-black focus:ring-gray-500"
                       />
                       <label htmlFor={`service-${index}`} className="text-sm cursor-pointer select-none">
                         {service}
@@ -70,7 +70,7 @@ export default function StartProjectForm() {
                 <input 
                   type="tel" 
                   placeholder="Phone" 
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                 />
               </div>
               
@@ -78,7 +78,7 @@ export default function StartProjectForm() {
                 <input 
                   type="text" 
                   placeholder="Company Name" 
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                 />
               </div>
 
@@ -86,13 +86,13 @@ export default function StartProjectForm() {
                 <input 
                   type="email" 
                   placeholder="Email *" 
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                   required
                 />
               </div>
 
               <div>
-                <select defaultValue="" className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500 appearance-none">
+                <select defaultValue="" className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500 appearance-none">
                   <option value="" disabled>Monthly Marketing Budget</option>
                   <option value="low">&lt; $1,000</option>
                   <option value="medium">$1,000 - $5,000</option>
@@ -104,7 +104,7 @@ export default function StartProjectForm() {
                 <input 
                   type="url" 
                   placeholder="Website URL" 
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                 />
               </div>
 
@@ -112,14 +112,14 @@ export default function StartProjectForm() {
                 <label className="block mb-2 font-semibold">Message</label>
                 <textarea 
                   rows={6}
-                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 rounded bg-white text-black border-none focus:ring-2 focus:ring-gray-500"
                 ></textarea>
               </div>
             </div>
           </div>
 
           <div className="mt-8 text-center md:text-right">
-             <button type="submit" className="bg-white text-[#090565] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors uppercase">
+             <button type="submit" className="bg-white text-[black] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors uppercase">
                Submit
              </button>
           </div>

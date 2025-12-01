@@ -11,13 +11,13 @@ export default function Navbar() {
   return (
     <nav className="w-full sticky top-0 z-50 shadow-md">
       {/* Blue Top Section */}
-      <div className="bg-[#070281] text-white px-6 lg:px-12 py-5">
+      <div className="bg-black text-white px-6 lg:px-12 py-5">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
             <div className="border-2 border-white rounded p-1 px-2">
               <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase font-sans">Brando</h1>
-              <p className="text-[0.5rem] md:text-[0.6rem] text-center tracking-[0.3em] uppercase -mt-1">Media</p>
+              <p className="text-[0.5rem] md:text-[0.6rem] text-center tracking-[0.3em] uppercase -mt-1">media</p>
             </div>
           </div>
           
@@ -29,7 +29,7 @@ export default function Navbar() {
               </svg>
               <span className="font-semibold text-sm md:text-base">+91-7548880026</span>
             </div>
-            <button className="bg-white text-[#090565] px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-gray-100 transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
+            <button className="bg-white text-[black] px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-gray-100 transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
               Request a Free Quote
             </button>
           </div>
@@ -45,18 +45,18 @@ export default function Navbar() {
               href="/" 
               className={`text-sm transition-colors ${
                 pathname === "/" 
-                  ? "font-bold text-[#090565]" 
-                  : "font-bold text-gray-800 hover:text-[#090565]"
+                  ? "font-bold text-[black]" 
+                  : "font-bold text-gray-800 hover:text-[black]"
               }`}
             >
               Home
             </Link>
             <Link 
-              href="/our-services" 
+              href="/services" 
               className={`text-sm transition-colors ${
-                pathname === "/our-services" 
-                  ? "font-bold text-[#090565]" 
-                  : "font-bold text-gray-800 hover:text-[#090565]"
+                pathname === "/services" 
+                  ? "font-bold text-[black]" 
+                  : "font-bold text-gray-800 hover:text-[black]"
               }`}
             >
               Our Services
@@ -65,8 +65,8 @@ export default function Navbar() {
               href="/portfolio" 
               className={`text-sm font-bold transition-colors ${
                 pathname === "/portfolio" 
-                  ? "text-[#090565]" 
-                  : "text-gray-800 hover:text-[#090565]"
+                  ? "text-[black]" 
+                  : "text-gray-800 hover:text-[black]"
               }`}
             >
               Portfolio
@@ -75,8 +75,8 @@ export default function Navbar() {
               href="/our-roots" 
               className={`text-sm font-bold transition-colors ${
                 pathname === "/our-roots" 
-                  ? "text-[#090565]" 
-                  : "text-gray-800 hover:text-[#090565]"
+                  ? "text-[black]" 
+                  : "text-gray-800 hover:text-[black]"
               }`}
             >
               About Us
@@ -86,8 +86,8 @@ export default function Navbar() {
               href="/careers" 
               className={`text-sm font-bold transition-colors ${
                 pathname === "/careers" 
-                  ? "text-[#090565]" 
-                  : "text-gray-800 hover:text-[#090565]"
+                  ? "text-[black]" 
+                  : "text-gray-800 hover:text-[black]"
               }`}
             >
               Careers
@@ -96,8 +96,8 @@ export default function Navbar() {
               href="/contact" 
               className={`text-sm font-bold transition-colors ${
                 pathname === "/contact" 
-                  ? "text-[#090565]" 
-                  : "text-gray-800 hover:text-[#090565]"
+                  ? "text-[black]" 
+                  : "text-gray-800 hover:text-[black]"
               }`}
             >
               Contact
@@ -106,8 +106,8 @@ export default function Navbar() {
               href="/pricing" 
               className={`text-sm font-bold transition-colors ${
                 pathname === "/pricing" 
-                  ? "text-[#090565]" 
-                  : "text-gray-800 hover:text-[#090565]"
+                  ? "text-[black]" 
+                  : "text-gray-800 hover:text-[black]"
               }`}
             >
               Pricing
@@ -143,18 +143,18 @@ export default function Navbar() {
                   href="/" 
                   className={`text-sm transition-colors ${
                     pathname === "/" 
-                      ? "font-bold text-[#090565]" 
-                      : "font-bold text-gray-800 hover:text-[#090565]"
+                      ? "font-bold text-[black]" 
+                      : "font-bold text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Home
                 </Link>
                 <Link 
-                  href="/our-services" 
+                  href="/services" 
                   className={`text-sm transition-colors ${
-                    pathname === "/our-services" 
-                      ? "font-bold text-[#090565]" 
-                      : "font-bold text-gray-800 hover:text-[#090565]"
+                    pathname === "/services" 
+                      ? "font-bold text-[black]" 
+                      : "font-bold text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Our Services
@@ -163,8 +163,8 @@ export default function Navbar() {
                   href="/portfolio" 
                   className={`text-sm font-bold transition-colors ${
                     pathname === "/portfolio" 
-                      ? "text-[#090565]" 
-                      : "text-gray-800 hover:text-[#090565]"
+                      ? "text-[black]" 
+                      : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Portfolio
@@ -173,8 +173,8 @@ export default function Navbar() {
                   href="/our-roots" 
                   className={`text-sm font-bold transition-colors ${
                     pathname === "/our-roots" 
-                      ? "text-[#090565]" 
-                      : "text-gray-800 hover:text-[#090565]"
+                      ? "text-[black]" 
+                      : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   About Us
@@ -184,8 +184,8 @@ export default function Navbar() {
                   href="/careers" 
                   className={`text-sm font-bold transition-colors ${
                     pathname === "/careers" 
-                      ? "text-[#090565]" 
-                      : "text-gray-800 hover:text-[#090565]"
+                      ? "text-[black]" 
+                      : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Careers
@@ -194,8 +194,8 @@ export default function Navbar() {
                   href="/contact" 
                   className={`text-sm font-bold transition-colors ${
                     pathname === "/contact" 
-                      ? "text-[#090565]" 
-                      : "text-gray-800 hover:text-[#090565]"
+                      ? "text-[black]" 
+                      : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Contact
@@ -204,8 +204,8 @@ export default function Navbar() {
                   href="/pricing" 
                   className={`text-sm font-bold transition-colors ${
                     pathname === "/pricing" 
-                      ? "text-[#090565]" 
-                      : "text-gray-800 hover:text-[#090565]"
+                      ? "text-[black]" 
+                      : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Pricing

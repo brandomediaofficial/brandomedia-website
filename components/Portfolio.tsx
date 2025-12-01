@@ -39,7 +39,7 @@ export default function Portfolio() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#090565] mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[black] mb-4">
             Explore Our Portfolio to Learn About Our Wide Range of Services
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
@@ -72,7 +72,7 @@ export default function Portfolio() {
                       xmlns="http://www.w3.org/2000/svg" 
                       viewBox="0 0 24 24" 
                       fill="currentColor" 
-                      className="w-8 h-8 text-[#090565] ml-1"
+                      className="w-8 h-8 text-[black] ml-1"
                     >
                       <path d="M8 5v14l11-7z" />
                     </svg>

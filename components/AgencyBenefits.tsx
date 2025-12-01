@@ -18,7 +18,7 @@ export default function AgencyBenefits() {
           {/* Content Side */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#090565] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[black] mb-4">
                 How Hiring a Digital Marketing Agency Can Help Your Business
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -36,7 +36,7 @@ export default function AgencyBenefits() {
             </ul>
 
             <div>
-              <h3 className="text-lg font-bold text-[#090565] mb-3">
+              <h3 className="text-lg font-bold text-[black] mb-3">
                 Here are a few of the most popular methods and approaches employed by web marketers:
               </h3>
               <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm">
@@ -48,7 +48,7 @@ export default function AgencyBenefits() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-[#090565] mb-3">
+              <h3 className="text-lg font-bold text-[black] mb-3">
                 Price Paid for Experts in Digital Marketing
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">

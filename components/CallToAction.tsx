@@ -1,6 +1,6 @@
 export default function CallToAction() {
   return (
-    <section className="bg-[#090565] py-12">
+    <section className="bg-black py-12">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-bold text-white uppercase tracking-wider">
@@ -11,7 +11,7 @@ export default function CallToAction() {
           </p>
         </div>
         
-        <button className="bg-white text-[#090565] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors uppercase">
+        <button className="bg-white text-[black] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors uppercase">
           Contact Us
         </button>
       </div>

@@ -10,12 +10,12 @@ export default function Boost() {
             <div className="w-full md:w-1/2">
                 <div className="mb-6">
                     {/* Logo Placeholder - Image 5 shows a logo at the top left of this section */}
-                    <div className="border-2 border-[#090565] rounded p-1 px-2 inline-block mb-6">
-                        <h1 className="text-xl font-bold tracking-widest uppercase font-sans text-[#090565]">Brandomedia</h1>
+                    <div className="border-2 border-[black] rounded p-1 px-2 inline-block mb-6">
+                        <h1 className="text-xl font-bold tracking-widest uppercase font-sans text-[black]">Brandomedia</h1>
                     </div>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-[#090565] mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-bold text-[black] mb-6 leading-tight">
                     Boost Your Company in , Pondicherry, <br/>
                     India With a Reputable Digital Marketing & <br/>
                     Video Production Firm
@@ -42,7 +42,7 @@ export default function Boost() {
                     </p>
                 </div>
 
-                <button className="border-2 border-[#090565] text-black px-8 py-2 rounded font-bold hover:bg-[#090565] hover:text-white transition-colors">
+                <button className="border-2 border-[black] text-black px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
                     Our Story
                 </button>
             </div>

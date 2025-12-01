@@ -2,7 +2,7 @@ export default function LocalMarketing() {
   return (
     <section className="bg-white py-16 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#090565] mb-8 leading-tight">
+        <h2 className="text-2xl md:text-3xl font-bold text-[black] mb-8 leading-tight">
           Conquer Every Corner: <br />
           Local Digital Marketing for Pondicherry Businesses
         </h2>

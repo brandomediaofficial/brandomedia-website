@@ -15,7 +15,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="bg-[#090565] py-16 text-white border-t border-blue-900">
+    <section className="bg-black py-16 text-white border-t border-blue-900">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-4">Our Testimonial</h2>
         
@@ -25,7 +25,7 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
-            <div key={index} className="bg-[#050344] p-8 rounded-lg flex flex-col items-center text-center h-full">
+            <div key={index} className="bg-gray-900 p-8 rounded-lg flex flex-col items-center text-center h-full">
               <h3 className="text-xl font-bold mb-6">{item.company}</h3>
               <p className="text-sm leading-relaxed mb-8 flex-grow">
                 {item.text}

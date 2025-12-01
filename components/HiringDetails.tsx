@@ -7,7 +7,7 @@ export default function HiringDetails() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Content Side */}
           <div className="space-y-8 order-2 md:order-1">
-            <h2 className="text-xl md:text-2xl font-bold text-[#090565] mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-[black] mb-4">
               Details to Think About Before Hiring Digital Marketing Experts
             </h2>
             

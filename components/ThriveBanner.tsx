@@ -1,6 +1,6 @@
 export default function ThriveBanner() {
   return (
-    <section className="bg-[#090565] py-16 text-center text-white">
+    <section className="bg-black py-16 text-center text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-tight">
           Thrive Online in Pondicherry with <br />

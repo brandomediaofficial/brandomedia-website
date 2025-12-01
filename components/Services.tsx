@@ -72,7 +72,7 @@ export default function Services() {
   return (
     <section className="py-16 bg-white text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#090565] mb-2">
+        <h2 className="text-2xl md:text-3xl font-bold text-[black] mb-2">
           Solutions To Grow Your Business
         </h2>
         <p className="text-gray-900 font-semibold mb-12">
@@ -82,22 +82,22 @@ export default function Services() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col items-center gap-4 group cursor-pointer">
-              <div className="text-gray-800 group-hover:text-brandomedia-blue transition-colors">
+              <div className="text-gray-800 group-hover:text-black transition-colors">
                 {service.icon}
               </div>
-              <h3 className="font-bold text-gray-800 group-hover:text-brandomedia-blue transition-colors">
+              <h3 className="font-bold text-gray-800 group-hover:text-black transition-colors">
                 {service.title}
               </h3>
             </div>
           ))}
         </div>
 
-        <button className="border-2 border-[#090565] text-[#090565] px-8 py-2 rounded font-bold hover:bg-[#090565] hover:text-white transition-colors uppercase tracking-wider">
+        <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors uppercase tracking-wider">
           Explore
         </button>
         
         <div className="mt-8 flex justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8 text-brandomedia-blue animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8 text-black animate-bounce">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>
         </div>

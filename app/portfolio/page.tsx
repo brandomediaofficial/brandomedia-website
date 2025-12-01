@@ -1,4 +1,190 @@
+import { Headset, MessageCircle, MessageSquare, Play } from "lucide-react";
+
 export default function Portfolio() {
-  return <h1>Our Work</h1>;
+  return (
+    <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        {/* Background Image Placeholder - Replace with actual image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ 
+            backgroundImage: 'url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop")',
+            filter: 'brightness(0.7)'
+          }}
+        />
+        
+        <div className="relative z-10 text-center text-white flex flex-col items-center">
+          {/* Logo Placeholder */}
+          <div className="w-20 h-20 md:w-32 md:h-32 border-4 border-white rounded-full flex items-center justify-center mb-6">
+            <span className="text-2xl md:text-4xl font-bold">B</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-7xl font-bold tracking-[0.5em] uppercase mb-8">
+            Portfolio
+          </h1>
+          
+          <button className="border-2 border-white px-8 py-2 text-sm md:text-base tracking-widest hover:bg-white hover:text-black transition-colors uppercase">
+            Explore
+          </button>
+        </div>
+      </section>
+
+      {/* Services Introduction */}
+      <section className="py-16 px-6 md:px-12 text-center max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-4xl font-bold text-black mb-6">
+          Discover Our Diverse Range of Services in Our Portfolio
+        </h2>
+        <p className="text-black text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+          Our portfolio highlights our competence in providing complete, personalized solutions that empower brands and promote success in the digital arena.
+        </p>
+      </section>
+
+      {/* Web Development Portfolio */}
+      <section className="py-16 bg-gray-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                Web Development Portfolio
+              </h2>
+              <p className="text-lg md:text-xl font-semibold text-black mb-2">
+                Your Website is the window of your business.
+                <br />
+                Keep it fresh, keep it exciting
+              </p>
+              <p className="text-black mt-4 font-medium">
+                for more exciting Website
+              </p>
+              <p className="text-black font-bold text-xl mt-1">
+                Swipe right &gt;&gt;
+              </p>
+            </div>
+          </div>
+
+          {/* Horizontal Scroll Container */}
+          <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+            {[1, 2, 3, 4].map((item) => (
+              <div key={item} className="min-w-[85vw] md:min-w-[600px] snap-center flex-shrink-0">
+                <div className="bg-white rounded-xl shadow-xl overflow-hidden aspect-[16/10] relative group">
+                  {/* Laptop Mockup Placeholder */}
+                  <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
+                    <div className="w-3/4 h-3/4 bg-gray-800 rounded-t-lg border-4 border-gray-300 border-b-0 relative">
+                      <div className="absolute inset-2 bg-white overflow-hidden">
+                        <img 
+                          src={`https://source.unsplash.com/random/800x600?website,${item}`} 
+                          alt={`Project ${item}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-[12.5%] w-[85%] h-3 bg-gray-300 rounded-b-lg"></div>
+                  </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors pointer-events-none" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video Production Portfolio */}
+      <section className="py-16 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                Video Production Portfolio
+              </h2>
+              <p className="text-lg font-medium text-black mb-2">
+                There are three responses to a piece of Design
+                <br />
+                - yes, no, and WOW!
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-black mt-2">
+                Wow is the one we aim for
+              </p>
+              
+              <div className="mt-8">
+                <p className="text-black font-medium">
+                  for more exciting videos
+                </p>
+                <p className="text-black font-bold text-xl mt-1">
+                  Swipe right &gt;&gt;
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Horizontal Scroll Container */}
+          <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+            {[1, 2, 3, 4].map((item) => (
+              <div key={item} className="min-w-[85vw] md:min-w-[500px] snap-center flex-shrink-0">
+                <div className="bg-black rounded-xl shadow-xl overflow-hidden aspect-video relative group cursor-pointer">
+                  <img 
+                    src={`https://source.unsplash.com/random/800x450?video,production,${item}`} 
+                    alt={`Video Project ${item}`}
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                    <p className="text-white font-bold truncate">Project Title {item}</p>
+                    <p className="text-gray-300 text-sm">Client Name</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact / Agency Info Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 uppercase tracking-wide">
+            Pondicherry Based Product Video & Photography Agency
+          </h2>
+          
+          <p className="text-black text-sm md:text-base leading-relaxed mb-12 max-w-4xl mx-auto">
+            For your potential customers, there is nothing more convincing than a professional product video. It might be
+            daunting to make yet another investment, but adding one of our premium product videos to your product page will
+            pay for itself in no time. Your conversion rates and customer engagement will go up, whilst consumer doubt and
+            bounce rates will plummet. The final video will be optimized for maximum e-commerce conversion and kept to the
+            recommended 1 to 2 minutes. Just like all our services, we will reimburse you if you are not 100% satisfied!
+          </p>
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24">
+            {/* Call Us Option */}
+            <div className="flex flex-col items-center gap-6">
+               <div className="relative">
+                  <Headset className="w-16 h-16 text-black" strokeWidth={1.5} />
+                  <MessageCircle className="w-8 h-8 text-black absolute -top-2 -right-4" strokeWidth={1.5} />
+               </div>
+
+              <button className="bg-white text-black border-2 border-black px-10 py-3 rounded-full font-bold text-sm tracking-widest hover:bg-black hover:text-white transition-colors uppercase">
+                Call Us Now
+              </button>
+            </div>
+
+            {/* Chat Option */}
+            <div className="flex flex-col items-center gap-6">
+              <div className="relative">
+                 <MessageSquare className="w-16 h-16 text-black" strokeWidth={1.5} />
+                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-bold text-black">?</div>
+              </div>
+              
+              <button className="bg-white text-black border-2 border-black px-10 py-3 rounded-full font-bold text-sm tracking-widest hover:bg-black hover:text-white transition-colors uppercase">
+                Chat With Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
 

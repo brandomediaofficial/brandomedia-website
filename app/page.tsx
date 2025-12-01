@@ -12,12 +12,11 @@ import ThriveBanner from "@/components/ThriveBanner";
 import Testimonials from "@/components/Testimonials";
 import WebDesignServices from "@/components/WebDesignServices";
 import ClientLogos from "@/components/ClientLogos";
-import StartProjectForm from "@/components/StartProjectForm";
+import ContactUsForm from "@/components/ContactUsForm";
 import WaitingBanner from "@/components/WaitingBanner";
 import LocalMarketing from "@/components/LocalMarketing";
-import MapSection from "@/components/MapSection";
-import AgencyBenefits from "@/components/AgencyBenefits";
-import HiringDetails from "@/components/HiringDetails";
+import LocalBusinessBanner from "@/components/LocalBusinessBanner";
+
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
       <Hero />
       <QuickLinks />
       <Services />
-       <Boost />
+      <Boost />
       <CallToAction />
       <Portfolio />
       <DigitalMarketing />
@@ -34,13 +33,9 @@ export default function Home() {
       <WebDesignServices />
       <Testimonials />
       <ClientLogos />
-      <StartProjectForm />
+      <ContactUsForm />
       <ThriveBanner />
-      <AgencyBenefits />
-      <HiringDetails />
       <WaitingBanner />
-      <LocalMarketing />
-      <MapSection />
     </div>
   );
 }
