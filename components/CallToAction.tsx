@@ -10,7 +10,7 @@ export default function CallToAction() {
             Get a quick consultation with our experts
           </p>
         </div>
-        
+
         <button className="bg-white text-[black] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors uppercase">
           Contact Us
         </button>

@@ -7,7 +7,7 @@ export default function DigitalMarketing() {
     "Search engine Marketing",
     "Local SEO",
     "Digital Marketing Strategy",
-    "Influencer Marketing"
+    "Influencer Marketing",
   ];
 
   return (
@@ -26,7 +26,8 @@ export default function DigitalMarketing() {
             </div>
 
             <p className="text-gray-600">
-              Utilise Our Digital Marketing Services to Reach Your Digital Objectives and Boost Your Profits.
+              Utilise Our Digital Marketing Services to Reach Your Digital
+              Objectives and Boost Your Profits.
             </p>
 
             <div className="space-y-2">

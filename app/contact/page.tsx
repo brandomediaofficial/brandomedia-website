@@ -5,51 +5,74 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-white">
       {/* Contact Info Section */}
-       {/* CTA Section */}
-      <section className="relative py-20 px-6 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-gradient-to-r from-[#4B0082] via-[#00008B] to-[#0000CD]"
+      {/* Hero Section */}
+      <section className="relative h-[400px] md:h-[500px] flex items-center justify-start overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+            backgroundImage:
+              'url("https://images.unsplash.com/photo-1622979135225-d2ba269fb1ac?q=80&w=2070&auto=format&fit=crop")',
           }}
         />
-        
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Connect with Brandomedia<br />
+        <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
+
+        <div className="relative z-10 max-w-4xl px-6 md:px-12 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+            Connect with Brandomedia
+            <br />
             Your Digital Partner in Pondicherry
-          </h2>
-          <p className="text-lg mb-8 leading-relaxed">
-            Get in touch with Brandomedia today and let's start a conversation about how our digital marketing expertise can elevate your business in Pondicherry. Whether you have questions, ideas, or are ready to embark on a digital journey, we're here to assist you. Reach out and discover how we can help you succeed online.
+          </h1>
+          <p className="text-lg mb-8 leading-relaxed max-w-2xl text-gray-200">
+            Get in touch with Brandomedia today and let's start a conversation
+            about how our digital marketing expertise can elevate your business
+            in Pondicherry. Whether you have questions, ideas, or are ready to
+            embark on a digital journey, we're here to assist you. Reach out and
+            discover how we can help you succeed online.
           </p>
-          <button className="border-2 border-white px-10 py-3 rounded hover:bg-white hover:text-[#00008B] transition-colors font-semibold">
+          <button className="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-blue-900 transition-colors font-bold uppercase tracking-wide">
             Connect with us
           </button>
         </div>
       </section>
-         {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: 'url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600&h=900&fit=crop")',
-            filter: 'brightness(0.6)'
-          }}
-        />
-        
-        <div className="relative z-10 text-center text-white px-6">
-          <div className="mt-12">
-            <p className="text-4xl md:text-6xl font-bold">"Pondicherry"</p>
-            <p className="text-2xl md:text-3xl font-semibold mt-2">Lets Go Digital</p>
-          </div>
+
+      {/* CTA Text Section */}
+      <section className="py-16 px-6 bg-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#00008B] mb-6">
+            Contact us
+          </h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Reach out to Brandomedia and start a conversation today. We're here
+            to transform your digital presence and drive success for your
+            Pondicherry-based business. Let's collaborate and make your digital
+            dreams a reality.
+          </p>
         </div>
       </section>
+
+      {/* Beach Banner Section */}
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              'url("https://images.unsplash.com/photo-1582558450147-975225000000?q=80&w=2070&auto=format&fit=crop")', // Pondicherry/Beach placeholder
+          }}
+        />
+        <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
+
+        <div className="relative z-10 text-center text-white px-6">
+          <p className="text-4xl md:text-6xl font-bold mb-2">"Pondicherry"</p>
+          <p className="text-2xl md:text-3xl font-semibold">Lets Go Digital</p>
+        </div>
+      </section>
+
       <section className="py-12 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#00008B] text-center mb-12">
-            Podicherry Branch
+            Pondicherry Branch
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {/* Phone */}
             <div className="flex flex-col items-center">
@@ -61,7 +84,9 @@ export default function Contact() {
             {/* Address */}
             <div className="flex flex-col items-center">
               <MapPin className="w-12 h-12 mb-4 text-black" strokeWidth={1.5} />
-              <p className="text-black font-medium">No 1, First Floor, Nanbargal</p>
+              <p className="text-black font-medium">
+                No 1, First Floor, Nanbargal
+              </p>
               <p className="text-black font-medium">Nagar, Reddiarpalayam,</p>
               <p className="text-black font-medium">Puducherry, 605010</p>
             </div>
@@ -75,7 +100,7 @@ export default function Contact() {
         </div>
       </section>
 
-         {/* Contact Form */}
+      {/* Contact Form */}
       <ContactUsForm />
 
       {/* Map Section */}
@@ -91,12 +116,6 @@ export default function Contact() {
           title="Brandomedia Pondicherry Location"
         />
       </section>
-
-   
-
-     
-
-   
     </main>
   );
 }

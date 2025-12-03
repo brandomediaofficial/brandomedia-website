@@ -1,4 +1,3 @@
-
 import QuickLinks from "@/components/QuickLinks";
 import Services from "@/components/Services";
 import Hero from "@/components/Hero";
@@ -17,7 +16,6 @@ import WaitingBanner from "@/components/WaitingBanner";
 import LocalMarketing from "@/components/LocalMarketing";
 import LocalBusinessBanner from "@/components/LocalBusinessBanner";
 
-
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -28,6 +26,7 @@ export default function Home() {
       <CallToAction />
       <Portfolio />
       <DigitalMarketing />
+
       <VideoProduction />
       <BrandingServices />
       <WebDesignServices />

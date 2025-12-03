@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -25,16 +25,16 @@ export default function Hero() {
       >
         <source src="/videos/hero-bg.mp4" type="video/webm" />
       </video>
-      
+
       {/* Overlay Gradient (optional, to match the dark blue tint if the image itself isn't dark enough) */}
       <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
 
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
         <div className="grid md:grid-cols-2 gap-8 w-full">
-            <div className="hidden md:block">
-                {/* Left side empty to show the face in the background image if it's positioned there. 
+          <div className="hidden md:block">
+            {/* Left side empty to show the face in the background image if it's positioned there. 
                     Based on the image, the face is on the left. */}
-            </div>
+          </div>
         </div>
       </div>
     </section>
