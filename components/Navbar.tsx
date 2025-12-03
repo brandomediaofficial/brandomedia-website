@@ -16,18 +16,35 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="border-2 border-white rounded p-1 px-2">
-              <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase font-sans">Brando</h1>
-              <p className="text-[0.5rem] md:text-[0.6rem] text-center tracking-[0.3em] uppercase -mt-1">media</p>
+              <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase font-sans">
+                Brando
+              </h1>
+              <p className="text-[0.5rem] md:text-[0.6rem] text-center tracking-[0.3em] uppercase -mt-1">
+                media
+              </p>
             </div>
           </div>
-          
+
           {/* Phone and Button */}
           <div className="flex items-center gap-4 md:gap-6">
             <div className="hidden sm:flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
               </svg>
-              <span className="font-semibold text-sm md:text-base">+91-7548880026</span>
+              <span className="font-semibold text-sm md:text-base">
+                +91-7548880026
+              </span>
             </div>
             <button className="bg-white text-[black] px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-gray-100 transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
               Request a Free Quote
@@ -41,95 +58,107 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-center gap-10 py-2">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className={`text-sm transition-colors ${
-                pathname === "/" 
-                  ? "font-bold text-[black]" 
+                pathname === "/"
+                  ? "font-bold text-[black]"
                   : "font-bold text-gray-800 hover:text-[black]"
               }`}
             >
               Home
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className={`text-sm transition-colors ${
-                pathname === "/services" 
-                  ? "font-bold text-[black]" 
+                pathname === "/services"
+                  ? "font-bold text-[black]"
                   : "font-bold text-gray-800 hover:text-[black]"
               }`}
             >
               Our Services
             </Link>
-            <Link 
-              href="/portfolio" 
+            <Link
+              href="/portfolio"
               className={`text-sm font-bold transition-colors ${
-                pathname === "/portfolio" 
-                  ? "text-[black]" 
+                pathname === "/portfolio"
+                  ? "text-[black]"
                   : "text-gray-800 hover:text-[black]"
               }`}
             >
               Portfolio
             </Link>
-            <Link 
-              href="/our-roots" 
+            <Link
+              href="/about"
               className={`text-sm font-bold transition-colors ${
-                pathname === "/our-roots" 
-                  ? "text-[black]" 
+                pathname === "/about"
+                  ? "text-[black]"
                   : "text-gray-800 hover:text-[black]"
               }`}
             >
               About Us
             </Link>
-           
-            <Link 
-              href="/careers" 
+
+            <Link
+              href="/careers"
               className={`text-sm font-bold transition-colors ${
-                pathname === "/careers" 
-                  ? "text-[black]" 
+                pathname === "/careers"
+                  ? "text-[black]"
                   : "text-gray-800 hover:text-[black]"
               }`}
             >
               Careers
             </Link>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className={`text-sm font-bold transition-colors ${
-                pathname === "/contact" 
-                  ? "text-[black]" 
+                pathname === "/contact"
+                  ? "text-[black]"
                   : "text-gray-800 hover:text-[black]"
               }`}
             >
               Contact
             </Link>
-            <Link 
-              href="/pricing" 
+            <Link
+              href="/pricing"
               className={`text-sm font-bold transition-colors ${
-                pathname === "/pricing" 
-                  ? "text-[black]" 
+                pathname === "/pricing"
+                  ? "text-[black]"
                   : "text-gray-800 hover:text-[black]"
               }`}
             >
               Pricing
             </Link>
-         
-         
-           
           </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center justify-between py-4">
             <span className="text-sm font-semibold">Menu</span>
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 hover:bg-gray-100 rounded"
               aria-label="Toggle menu"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
                 {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
                 )}
               </svg>
             </button>
@@ -139,79 +168,77 @@ export default function Navbar() {
           {isMobileMenuOpen && (
             <div className="lg:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col gap-4">
-                <Link 
-                  href="/" 
+                <Link
+                  href="/"
                   className={`text-sm transition-colors ${
-                    pathname === "/" 
-                      ? "font-bold text-[black]" 
+                    pathname === "/"
+                      ? "font-bold text-[black]"
                       : "font-bold text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Home
                 </Link>
-                <Link 
-                  href="/services" 
+                <Link
+                  href="/services"
                   className={`text-sm transition-colors ${
-                    pathname === "/services" 
-                      ? "font-bold text-[black]" 
+                    pathname === "/services"
+                      ? "font-bold text-[black]"
                       : "font-bold text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Our Services
                 </Link>
-                <Link 
-                  href="/portfolio" 
+                <Link
+                  href="/portfolio"
                   className={`text-sm font-bold transition-colors ${
-                    pathname === "/portfolio" 
-                      ? "text-[black]" 
+                    pathname === "/portfolio"
+                      ? "text-[black]"
                       : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Portfolio
                 </Link>
-                <Link 
-                  href="/our-roots" 
+                <Link
+                  href="/about"
                   className={`text-sm font-bold transition-colors ${
-                    pathname === "/our-roots" 
-                      ? "text-[black]" 
+                    pathname === "/about"
+                      ? "text-[black]"
                       : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   About Us
                 </Link>
-               
-                <Link 
-                  href="/careers" 
+
+                <Link
+                  href="/careers"
                   className={`text-sm font-bold transition-colors ${
-                    pathname === "/careers" 
-                      ? "text-[black]" 
+                    pathname === "/careers"
+                      ? "text-[black]"
                       : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Careers
                 </Link>
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className={`text-sm font-bold transition-colors ${
-                    pathname === "/contact" 
-                      ? "text-[black]" 
+                    pathname === "/contact"
+                      ? "text-[black]"
                       : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Contact
                 </Link>
-                <Link 
-                  href="/pricing" 
+                <Link
+                  href="/pricing"
                   className={`text-sm font-bold transition-colors ${
-                    pathname === "/pricing" 
-                      ? "text-[black]" 
+                    pathname === "/pricing"
+                      ? "text-[black]"
                       : "text-gray-800 hover:text-[black]"
                   }`}
                 >
                   Pricing
                 </Link>
-             
-           
               </div>
             </div>
           )}
@@ -220,4 +247,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

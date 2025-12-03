@@ -23,7 +23,7 @@ export default function Hero() {
         muted
         playsInline
       >
-        <source src="/videos/hero-bg.webm" type="video/webm" />
+        <source src="/videos/hero-bg.mp4" type="video/webm" />
       </video>
       
       {/* Overlay Gradient (optional, to match the dark blue tint if the image itself isn't dark enough) */}
