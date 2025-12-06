@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WaitingBanner() {
   return (
     <section className="bg-black py-12">
@@ -8,13 +10,16 @@ export default function WaitingBanner() {
               What are you waiting for?
             </h2>
             <p className="text-gray-200">
-              Join our list of happy clients and let us help you transform your business.
+              Join our list of happy clients and let us help you transform your
+              business.
             </p>
           </div>
-          
-          <button className="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-[black] transition-colors uppercase whitespace-nowrap">
-            Get Quote
-          </button>
+
+          <Link href="/#contact-us">
+            <button className="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-[black] transition-colors uppercase whitespace-nowrap">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </div>
     </section>

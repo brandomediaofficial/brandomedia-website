@@ -473,7 +473,7 @@ export default function ServicesPage() {
                 <Phone size={48} className="text-slate-900" strokeWidth={1.5} />
               </div>
               <a href="tel:+917548880026">
-                <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
+                <button className="bg-white text-black border border-black px-8 py-3 rounded-full font-bold text-sm hover:bg-black hover:text-white transition-colors uppercase tracking-wide">
                   CALL US NOW
                 </button>
               </a>
@@ -491,7 +491,7 @@ export default function ServicesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
+                <button className="bg-white text-black border border-black px-8 py-3 rounded-full font-bold text-sm hover:bg-black hover:text-white transition-colors uppercase tracking-wide">
                   CHAT WITH US
                 </button>
               </a>
@@ -671,7 +671,7 @@ export default function ServicesPage() {
             Contact us today to discuss your requirements and get a free quote.
           </p>
           <Link href="/contact">
-            <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-colors shadow-lg">
+            <button className="bg-black text-white border border-white px-6 py-2 rounded-full font-bold text-lg hover:bg-white hover:text-black transition-colors shadow-lg">
               Contact Us Now
             </button>
           </Link>

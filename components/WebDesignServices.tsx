@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WebDesignServices() {
   const services = [
@@ -7,7 +8,7 @@ export default function WebDesignServices() {
     "Corporate Website",
     "HTML 5 Website",
     "Wordpress Website",
-    "Shopify Website"
+    "Shopify Website",
   ];
 
   return (
@@ -36,7 +37,8 @@ export default function WebDesignServices() {
             </div>
 
             <p className="text-gray-600">
-              Hire us to deliver organic results for your business and crush your competition.
+              Hire us to deliver organic results for your business and crush
+              your competition.
             </p>
 
             <div className="space-y-2">
@@ -48,9 +50,11 @@ export default function WebDesignServices() {
               ))}
             </div>
 
-            <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
-              Get a Free Quote
-            </button>
+            <Link href="/#contact-us">
+              <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
+                Get a Free Quote
+              </button>
+            </Link>
           </div>
         </div>
       </div>

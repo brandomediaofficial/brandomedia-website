@@ -25,7 +25,7 @@ export default function AboutCTA() {
         </p>
 
         <Link href="/contact">
-          <button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+          <button className="bg-transparent text-white border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-colors">
             Get a Custom Proposal
           </button>
         </Link>

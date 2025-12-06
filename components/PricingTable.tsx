@@ -364,7 +364,7 @@ export default function PricingTable() {
             </p>
             <button
               onClick={handleScrollToContact}
-              className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors transform hover:-translate-y-1"
+              className="bg-black text-white border border-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-black transition-colors transform hover:-translate-y-1"
             >
               👉 Get a Free Quote
             </button>

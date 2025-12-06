@@ -46,7 +46,7 @@ export default function Navbar() {
                 +91-7548880026
               </span>
             </div>
-            <button className="bg-white text-[black] px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-gray-100 transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
+            <button className="bg-black text-white border border-white px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-white hover:text-black transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
               Request a Free Quote
             </button>
           </div>

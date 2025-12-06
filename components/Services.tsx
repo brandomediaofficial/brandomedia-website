@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const services = [
   {
@@ -187,9 +188,11 @@ export default function Services() {
           ))}
         </div>
 
-        <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors uppercase tracking-wider">
-          Explore
-        </button>
+        <Link href="/services">
+          <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors uppercase tracking-wider">
+            Explore
+          </button>
+        </Link>
 
         <div className="mt-8 flex justify-center">
           <svg

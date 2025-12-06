@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BrandingServices() {
   const services = [
@@ -7,7 +8,7 @@ export default function BrandingServices() {
     "Brand Name",
     "Logo Design",
     "Brochure Design",
-    "Packaging Design"
+    "Packaging Design",
   ];
 
   return (
@@ -26,7 +27,8 @@ export default function BrandingServices() {
             </div>
 
             <p className="text-gray-600">
-              Create stunning and distinctive website designs that turn visitors become customers.
+              Create stunning and distinctive website designs that turn visitors
+              become customers.
             </p>
 
             <div className="space-y-2">
@@ -38,9 +40,11 @@ export default function BrandingServices() {
               ))}
             </div>
 
-            <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
-              Get a Free Quote
-            </button>
+            <Link href="/#contact-us">
+              <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
+                Get a Free Quote
+              </button>
+            </Link>
           </div>
 
           {/* Image Side */}

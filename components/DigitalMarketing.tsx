@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DigitalMarketing() {
   const services = [
@@ -39,9 +40,11 @@ export default function DigitalMarketing() {
               ))}
             </div>
 
-            <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
-              Get a Free Quote
-            </button>
+            <Link href="/#contact-us">
+              <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
+                Get a Free Quote
+              </button>
+            </Link>
           </div>
 
           {/* Image Side with Purple Gradient Background */}

@@ -51,7 +51,7 @@ export default function Careers() {
 
             <button
               onClick={handleScrollToPositions}
-              className="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-[#00008B] transition-colors font-medium"
+              className="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-black transition-colors font-medium"
             >
               Click here to view our open positions
             </button>
@@ -140,7 +140,7 @@ export default function Careers() {
                 <h3 className="text-xl font-bold">{position}</h3>
                 <button
                   onClick={() => handleApply(position)}
-                  className="bg-white text-black px-8 py-2 rounded-full font-bold hover:bg-gray-100 transition-colors"
+                  className="bg-black text-white border border-white px-8 py-2 rounded-full font-bold hover:bg-white hover:text-black transition-colors"
                 >
                   Apply Now
                 </button>

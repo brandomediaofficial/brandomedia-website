@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Boost() {
@@ -44,9 +45,11 @@ export default function Boost() {
               </p>
             </div>
 
-            <button className="border-2 border-[black] text-black px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
-              Our Story
-            </button>
+            <Link href="/about">
+              <button className="border-2 border-[black] text-black px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
+                Our Story
+              </button>
+            </Link>
           </div>
 
           {/* Image Content */}

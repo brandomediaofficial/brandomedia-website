@@ -44,7 +44,10 @@ export default function ContactUsForm() {
   };
 
   return (
-    <section className="relative py-24 bg-black text-white overflow-hidden">
+    <section
+      id="contact-us"
+      className="relative py-24 bg-black text-white overflow-hidden"
+    >
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center"

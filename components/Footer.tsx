@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { 
-  FaCalendarAlt, 
-  FaDollarSign, 
-  FaChartLine, 
-  FaGem, 
-  FaChartBar, 
-  FaDesktop, 
-  FaHeart, 
-  FaRobot, 
+import {
+  FaCalendarAlt,
+  FaDollarSign,
+  FaChartLine,
+  FaGem,
+  FaChartBar,
+  FaDesktop,
+  FaHeart,
+  FaRobot,
   FaRocket,
   FaPhoneAlt,
   FaMapMarkerAlt,
@@ -16,7 +16,7 @@ import {
   FaYoutube,
   FaInstagram,
   FaLinkedin,
-  FaBehance
+  FaBehance,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -42,16 +42,25 @@ export default function Footer() {
             {/* Column 1: Brand & CTA */}
             <div className="space-y-6">
               <div className="border-2 border-[black] rounded-lg p-2 inline-block">
-                <h3 className="text-2xl font-bold text-[black] tracking-widest uppercase">BRANDOMEDIA</h3>
+                <h3 className="text-2xl font-bold text-[black] tracking-widest uppercase">
+                  BRANDOMEDIA
+                </h3>
               </div>
-              
+
               <p className="text-gray-600 leading-relaxed">
-                Brandomedia is a leading digital marketing agency based in Pondicherry, specializing in driving online success for businesses. With our innovative strategies, creative solutions, and unwavering commitment, we help businesses thrive in the digital landscape. Trust us to elevate your brand, engage your audience, and achieve remarkable results.
+                Brandomedia is a leading digital marketing agency based in
+                Pondicherry, specializing in driving online success for
+                businesses. With our innovative strategies, creative solutions,
+                and unwavering commitment, we help businesses thrive in the
+                digital landscape. Trust us to elevate your brand, engage your
+                audience, and achieve remarkable results.
               </p>
 
-              <button className="bg-[black] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors">
-                SAY HELLO!
-              </button>
+              <Link href="/contact">
+                <button className="bg-[black] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors">
+                  SAY HELLO!
+                </button>
+              </Link>
             </div>
 
             {/* Column 2: Hours & Addresses */}
@@ -88,28 +97,60 @@ export default function Footer() {
               </div>
 
               <div className="flex gap-4 text-2xl text-black">
-                <a href="#" className="hover:text-[black]"><FaFacebook /></a>
-                <a href="#" className="hover:text-[black]"><FaYoutube /></a>
-                <a href="#" className="hover:text-[black]"><FaInstagram /></a>
-                <a href="#" className="hover:text-[black]"><FaLinkedin /></a>
-                <a href="#" className="hover:text-[black]"><FaBehance /></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61584224957944"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[black]"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://www.youtube.com/@brandomediain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[black]"
+                >
+                  <FaYoutube />
+                </a>
+                <a
+                  href="https://www.instagram.com/brandomedia.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[black]"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/110203653/admin/dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[black]"
+                >
+                  <FaLinkedin />
+                </a>
               </div>
 
               <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-xs font-semibold text-gray-700 text-left md:text-right w-full md:w-auto">
-                <Link href="#" className="hover:text-[black]">Privacy Policy</Link>
-                <Link href="#" className="hover:text-[black]">Terms and Conditions</Link>
-                <Link href="#" className="hover:text-[black]">Refund Policy</Link>
-                <Link href="#" className="hover:text-[black]">Cancellation Policy</Link>
+                <Link href="#" className="hover:text-[black]">
+                  Privacy Policy
+                </Link>
+                <Link href="#" className="hover:text-[black]">
+                  Terms and Conditions
+                </Link>
+                <Link href="#" className="hover:text-[black]">
+                  Refund Policy
+                </Link>
+                <Link href="#" className="hover:text-[black]">
+                  Cancellation Policy
+                </Link>
               </div>
             </div>
-              
           </div>
-          
         </div>
-        
       </div>
 
-       {/* Services Strip */}
+      {/* Services Strip */}
       <div className="bg-gray-100 py-6 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs md:text-sm font-semibold text-gray-700">

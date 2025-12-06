@@ -61,7 +61,7 @@ export default function AboutCompanyOverview() {
         </div>
 
         <Link href="/contact#contact-form">
-          <button className="bg-black text-white px-10 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">
+          <button className="bg-white text-black border border-black px-10 py-3 rounded-full font-bold hover:bg-black hover:text-white transition-colors">
             HIRE US !
           </button>
         </Link>

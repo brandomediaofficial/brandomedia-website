@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function VideoProduction() {
   const services = [
@@ -6,7 +7,7 @@ export default function VideoProduction() {
     "Promotional Videos",
     "Social Media Reels",
     "Property Videos",
-    "Explainer Videos"
+    "Explainer Videos",
   ];
 
   return (
@@ -35,7 +36,9 @@ export default function VideoProduction() {
             </div>
 
             <p className="text-gray-600">
-              We&apos;re redefining the way businesses connect with one another, from unique solutions like interactive and personalized video to tailored video content.
+              We&apos;re redefining the way businesses connect with one another,
+              from unique solutions like interactive and personalized video to
+              tailored video content.
             </p>
 
             <div className="space-y-2">
@@ -47,9 +50,11 @@ export default function VideoProduction() {
               ))}
             </div>
 
-            <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
-              Get a Free Quote
-            </button>
+            <Link href="/#contact-us">
+              <button className="border-2 border-[black] text-[black] px-8 py-2 rounded font-bold hover:bg-[black] hover:text-white transition-colors">
+                Get a Free Quote
+              </button>
+            </Link>
           </div>
         </div>
       </div>
