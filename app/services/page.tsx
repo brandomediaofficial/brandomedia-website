@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   Monitor,
   Globe,
@@ -38,37 +39,39 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans">
       {/* Hero Section (Image 1) */}
-      <section className="bg-black text-white py-20 px-6 relative overflow-hidden">
+      <section className="bg-black text-white py-12 px-6 relative overflow-hidden">
         <div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
               Elevate Your Business with Exceptional Website Development in
               Pondicherry
             </h1>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed max-w-xl">
+            <p className="text-sm text-gray-100 mb-6 leading-relaxed max-w-xl">
               Experience expert website development in Pondicherry that delivers
               stunning designs and seamless functionality to drive your business
               forward.
             </p>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-black transition-colors uppercase tracking-wide">
-              Get Free Quote
-            </button>
+            <Link href="/contact">
+              <button className="bg-transparent border-2 border-white text-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-black transition-colors uppercase tracking-wide text-sm">
+                Get Free Quote
+              </button>
+            </Link>
           </div>
           <div className="relative">
             {/* Placeholder for the lady image - using a professional stock photo */}
             <div className="relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2672&auto=format&fit=crop"
                 alt="Web Developer"
-                className="rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover h-[400px]"
+                className="rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover h-[300px]"
               />
             </div>
             {/* Decorative elements from the design */}
             <div className="absolute -top-10 -right-10 text-yellow-400 opacity-20">
-              <Settings size={100} />
+              <Settings size={80} />
             </div>
             <div className="absolute bottom-10 -left-10 text-gray-400 opacity-20">
-              <Shield size={80} />
+              <Shield size={60} />
             </div>
           </div>
         </div>
@@ -97,11 +100,10 @@ export default function ServicesPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {[
               { icon: Globe, title: "Corporate Website" },
-              { icon: Layout, title: "Wordpress Website" },
+              { icon: Layout, title: "React Website" },
               { icon: ShoppingCart, title: "E-Commerce Website" },
               { icon: Smartphone, title: "Shopify Website" },
               { icon: Database, title: "CMS Website" },
-              { icon: Code, title: "HTML 5 Website" },
             ].map((item, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="w-20 h-20 mb-4 flex items-center justify-center border-2 border-slate-900 rounded-lg group-hover:bg-slate-900 group-hover:text-white transition-colors duration-300">
@@ -151,8 +153,8 @@ export default function ServicesPage() {
             {/* Far Left Item */}
             <div className="absolute z-10 w-[40%] md:w-[30%] -translate-x-[110%] scale-75 opacity-60 shadow-lg rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1555421689-492a1880ceb9?q=80&w=2670&auto=format&fit=crop"
-                alt="Project Far Left"
+                src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2670&auto=format&fit=crop"
+                alt="Mobile UI Far Left"
                 className="w-full h-auto"
               />
             </div>
@@ -206,12 +208,12 @@ export default function ServicesPage() {
               },
               {
                 icon: Server,
-                title: "Linux hosting",
-                desc: "We offer affordable and tailored Linux hosting services to all websites.",
+                title: "Vercel Hosting",
+                desc: "We offer affordable and tailored Vercel hosting services to all websites.",
               },
               {
                 icon: BarChart,
-                title: "Digital marketing",
+                title: "Digital Marketing",
                 desc: "We ensure your growth in the ever-changing online market and set your business online.",
               },
               {
@@ -261,10 +263,9 @@ export default function ServicesPage() {
             {[
               { icon: FileCode, label: "HTML5" },
               { icon: Palette, label: "CSS3" },
-              { icon: Database, label: "PHP" },
-              { icon: Layout, label: "WordPress" },
-              { icon: ShoppingBag, label: "Shopify" },
               { icon: Atom, label: "React" },
+              { icon: Server, label: "Node JS" },
+              { icon: Database, label: "SQL" },
             ].map((tool, index) => (
               <div
                 key={index}
@@ -371,18 +372,18 @@ export default function ServicesPage() {
         <div className="container mx-auto max-w-6xl flex flex-col gap-24">
           {[
             {
-              title: "NEXEX",
-              desc: "NEXEX TECHNOLOGIES aims to be a global leader in automotive infotainment systems, which leads the automotive culture. Along with the advancement of in-vehicle infotainment technology.",
-              image:
-                "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=2574&auto=format&fit=crop",
+              title: "Travel Stays",
+              desc: "Travel Stays is a hotel booking website that offers a wide range of hotel options to its users. The website is designed to be user-friendly and easy to navigate, with a focus on providing a seamless booking experience.",
+              image: "../images/travelstays.png",
               reverse: true,
+              link: "https://travelstays.world",
             },
             {
-              title: "IROAD INDIA",
-              desc: "IROAD India is the world's leading dash camera manufacturer with the highest number of car cameras sold worldwide compared to any other global leading brand.",
-              image:
-                "https://images.unsplash.com/photo-1481487484168-9b930d5b7d9d?q=80&w=2670&auto=format&fit=crop",
+              title: "Sadhisha Worldwide",
+              desc: "Sadhisha Worldwide is a premier property and land selling platform committed to helping clients find their perfect plot. The website offers a seamless browsing experience for diverse real estate listings, ensuring transparency and ease in every transaction.",
+              image: "../images/sadhisha.png",
               reverse: false,
+              link: "https://sadhishaworldwide.in",
             },
             {
               title: "WAY TO FLY",
@@ -391,6 +392,7 @@ export default function ServicesPage() {
               image:
                 "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2621&auto=format&fit=crop",
               reverse: true,
+              link: "#",
             },
             {
               title: "Build Tech",
@@ -398,6 +400,7 @@ export default function ServicesPage() {
               image:
                 "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2689&auto=format&fit=crop",
               reverse: false,
+              link: "#",
             },
           ].map((project, index) => (
             <div
@@ -436,9 +439,14 @@ export default function ServicesPage() {
                 <p className="text-slate-600 text-lg leading-relaxed mb-8">
                   {project.desc}
                 </p>
-                <button className="bg-[#333] text-white px-8 py-3 rounded-none font-medium hover:bg-black transition-colors">
-                  View Site
-                </button>
+                <Link
+                  href={project.link}
+                  target={project.link !== "#" ? "_blank" : "_self"}
+                >
+                  <button className="bg-[#333] text-white px-8 py-3 rounded-none font-medium hover:bg-black transition-colors">
+                    View Site
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -464,9 +472,11 @@ export default function ServicesPage() {
               <div className="w-16 h-16 flex items-center justify-center">
                 <Phone size={48} className="text-slate-900" strokeWidth={1.5} />
               </div>
-              <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
-                CALL US NOW
-              </button>
+              <a href="tel:+917548880026">
+                <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
+                  CALL US NOW
+                </button>
+              </a>
             </div>
             <div className="flex flex-col items-center gap-4">
               <div className="w-16 h-16 flex items-center justify-center">
@@ -476,9 +486,15 @@ export default function ServicesPage() {
                   strokeWidth={1.5}
                 />
               </div>
-              <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
-                CHAT WITH US
-              </button>
+              <a
+                href="https://wa.me/917548880026"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-gray-900 transition-colors uppercase tracking-wide">
+                  CHAT WITH US
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -654,9 +670,11 @@ export default function ServicesPage() {
           <p className="text-gray-100 mb-8 text-lg">
             Contact us today to discuss your requirements and get a free quote.
           </p>
-          <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-colors shadow-lg">
-            Contact Us Now
-          </button>
+          <Link href="/contact">
+            <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-colors shadow-lg">
+              Contact Us Now
+            </button>
+          </Link>
         </div>
       </section>
     </main>

@@ -1,7 +1,16 @@
+"use client";
+
 import ContactUsForm from "@/components/ContactUsForm";
 import { Phone, MapPin, Mail } from "lucide-react";
 
 export default function Contact() {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact-form");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
       {/* Contact Info Section */}
@@ -11,7 +20,7 @@ export default function Contact() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1622979135225-d2ba269fb1ac?q=80&w=2070&auto=format&fit=crop")',
+              'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
           }}
         />
         <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
@@ -29,7 +38,10 @@ export default function Contact() {
             embark on a digital journey, we're here to assist you. Reach out and
             discover how we can help you succeed online.
           </p>
-          <button className="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-blue-900 transition-colors font-bold uppercase tracking-wide">
+          <button
+            onClick={handleScrollToContact}
+            className="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-blue-900 transition-colors font-bold uppercase tracking-wide"
+          >
             Connect with us
           </button>
         </div>
@@ -55,8 +67,7 @@ export default function Contact() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1582558450147-975225000000?q=80&w=2070&auto=format&fit=crop")', // Pondicherry/Beach placeholder
+            backgroundImage: 'url("/images/pondicherry-cover.jpg")', // Pondicherry/Beach placeholder
           }}
         />
         <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
@@ -101,7 +112,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Form */}
-      <ContactUsForm />
+      <div id="contact-form">
+        <ContactUsForm />
+      </div>
 
       {/* Map Section */}
       <section className="w-full h-[400px] md:h-[500px]">

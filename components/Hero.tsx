@@ -12,8 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen md:h-[80vh] w-full bg-black overflow-hidden">
-      {/* Background Video */}
+    <section className="relative h-[100dvh] md:h-[80vh] w-full bg-black overflow-hidden">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -23,7 +22,7 @@ export default function Hero() {
         muted
         playsInline
       >
-        <source src="/videos/hero-bg.mp4" type="video/webm" />
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay Gradient (optional, to match the dark blue tint if the image itself isn't dark enough) */}

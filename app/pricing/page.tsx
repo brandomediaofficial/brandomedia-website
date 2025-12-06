@@ -8,6 +8,9 @@ export default function Pricing() {
     <main className="min-h-screen bg-white">
       <PricingHero />
       <PricingTable />
+      <div id="contact-form">
+        <ContactUsForm />
+      </div>
     </main>
   );
 }

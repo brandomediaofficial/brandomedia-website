@@ -24,7 +24,7 @@ export default function AboutSuccessStory() {
       <div className="w-full h-[400px] md:h-[600px] bg-gray-300 flex items-center justify-center relative overflow-hidden">
         {/* You can replace this src with the actual image URL later */}
         <img
-          src="/placeholder-painting.jpg"
+          src="/images/birmingham-museums-trust-5EUh-tq31eA-unsplash.jpg"
           alt="Classical Painting representing success and struggle"
           className="w-full h-full object-cover"
           onError={(e) => {

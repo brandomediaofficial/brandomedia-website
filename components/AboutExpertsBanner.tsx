@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function AboutExpertsBanner() {
   return (
@@ -14,9 +15,11 @@ export default function AboutExpertsBanner() {
           </p>
         </div>
 
-        <button className="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-black transition-colors whitespace-nowrap">
-          GET QUOTE
-        </button>
+        <Link href="/contact#contact-form">
+          <button className="border-2 border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-black transition-colors whitespace-nowrap">
+            GET QUOTE
+          </button>
+        </Link>
       </div>
     </section>
   );

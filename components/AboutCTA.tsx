@@ -1,8 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 export default function AboutCTA() {
   return (
-    <section className="w-full bg-[#4a4a55] py-20 px-4 text-center text-white">
+    <section
+      className="w-full py-20 px-4 text-center text-white relative bg-cover bg-center"
+      style={{
+        backgroundImage:
+          'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop")',
+      }}
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
           Data-Fueled, Expert-Led Digital
@@ -17,9 +24,11 @@ export default function AboutCTA() {
           that deliver real results.
         </p>
 
-        <button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors">
-          Get a Custom Proposal
-        </button>
+        <Link href="/contact">
+          <button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+            Get a Custom Proposal
+          </button>
+        </Link>
       </div>
     </section>
   );

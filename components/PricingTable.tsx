@@ -1,7 +1,16 @@
+"use client";
+
 import React from "react";
 import { Check } from "lucide-react";
 
 export default function PricingTable() {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact-form");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const webDevPlans = [
     {
       name: "Basic Website",
@@ -195,7 +204,10 @@ export default function PricingTable() {
                   </div>
                 </div>
                 <div className="p-8 pt-0 mt-auto">
-                  <button className="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition-colors">
+                  <button
+                    onClick={handleScrollToContact}
+                    className="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition-colors"
+                  >
                     👉 Get Quote
                   </button>
                 </div>
@@ -265,7 +277,10 @@ export default function PricingTable() {
                   )}
                 </div>
                 <div className="p-6 pt-0 mt-auto">
-                  <button className="w-full bg-black text-white py-2.5 rounded-lg font-bold text-sm hover:bg-gray-800 transition-colors">
+                  <button
+                    onClick={handleScrollToContact}
+                    className="w-full bg-black text-white py-2.5 rounded-lg font-bold text-sm hover:bg-gray-800 transition-colors"
+                  >
                     Get Quote
                   </button>
                 </div>
@@ -347,7 +362,10 @@ export default function PricingTable() {
             <p className="text-xl md:text-2xl text-gray-300 mb-10">
               Let’s build your brand together.
             </p>
-            <button className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors transform hover:-translate-y-1">
+            <button
+              onClick={handleScrollToContact}
+              className="bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors transform hover:-translate-y-1"
+            >
               👉 Get a Free Quote
             </button>
           </div>

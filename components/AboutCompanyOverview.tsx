@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function AboutCompanyOverview() {
   return (
@@ -6,11 +7,11 @@ export default function AboutCompanyOverview() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Logo Representation */}
         <div className="mb-12 flex justify-center">
-          <div className="border-2 border-[#0a0a85] rounded p-2 px-4 inline-block">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-widest uppercase font-sans text-[#0a0a85]">
+          <div className="border-2 border-black rounded p-2 px-4 inline-block">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-widest uppercase font-sans text-black">
               Brando
             </h1>
-            <p className="text-xs md:text-sm text-center tracking-[0.3em] uppercase -mt-1 text-[#0a0a85]">
+            <p className="text-xs md:text-sm text-center tracking-[0.3em] uppercase -mt-1 text-black">
               media
             </p>
           </div>
@@ -48,20 +49,22 @@ export default function AboutCompanyOverview() {
         </div>
 
         <div className="mt-16 mb-12">
-          <h3 className="text-xl md:text-2xl font-bold text-[#0a0a85] mb-2">
+          <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
             There are three responses to a piece of work
           </h3>
-          <h3 className="text-xl md:text-2xl font-bold text-[#0a0a85] mb-4">
+          <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
             - yes, no, and WOW!
           </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a85]">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
             Wow is the one we aim for"
           </h2>
         </div>
 
-        <button className="bg-black text-white px-10 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">
-          HIRE US !
-        </button>
+        <Link href="/contact#contact-form">
+          <button className="bg-black text-white px-10 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">
+            HIRE US !
+          </button>
+        </Link>
       </div>
     </section>
   );
