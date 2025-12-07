@@ -18,10 +18,10 @@ export default function AboutCTA() {
         </h2>
 
         <p className="text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
-          At Brandomedia, we're not just a digital marketing agency - we're your
-          growth partner. Our passionate team of 20+ experts combines their
-          diverse skills and experience to craft powerful digital strategies
-          that deliver real results.
+          At Brandomedia, we&apos;re not just a digital marketing agency -
+          we&apos;re your growth partner. Our passionate team of 20+ experts
+          combines their diverse skills and experience to craft powerful digital
+          strategies that deliver real results.
         </p>
 
         <Link href="/contact">

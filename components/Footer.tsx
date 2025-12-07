@@ -16,7 +16,6 @@ import {
   FaYoutube,
   FaInstagram,
   FaLinkedin,
-  FaBehance,
 } from "react-icons/fa";
 
 export default function Footer() {

@@ -10,10 +10,10 @@ export default function AboutValues() {
 
         <p className="text-lg text-gray-600 mb-12 leading-relaxed text-center md:text-left">
           Brandomedia was born from a passion to make a difference in the
-          digital marketing landscape. Fueled by a spirit of innovation, we've
-          grown into a team of passionate individuals, all united by a core set
-          of values. These values are not just words, they are the driving force
-          behind everything we do.
+          digital marketing landscape. Fueled by a spirit of innovation,
+          we&apos;ve grown into a team of passionate individuals, all united by
+          a core set of values. These values are not just words, they are the
+          driving force behind everything we do.
         </p>
 
         <h3 className="text-xl font-bold mb-8 text-gray-800">
@@ -25,9 +25,9 @@ export default function AboutValues() {
             <span className="text-gray-500 mt-1">•</span>
             <div>
               <strong className="text-gray-900">Boundless Creativity:</strong>{" "}
-              We believe in pushing boundaries and exploring fresh ideas. We're
-              not afraid to think outside the box and develop innovative
-              strategies that will make your brand stand out.
+              We believe in pushing boundaries and exploring fresh ideas.
+              We&apos;re not afraid to think outside the box and develop
+              innovative strategies that will make your brand stand out.
             </div>
           </li>
 
@@ -48,9 +48,9 @@ export default function AboutValues() {
             <span className="text-gray-500 mt-1">•</span>
             <div>
               <strong className="text-gray-900">Lifelong Learners:</strong>{" "}
-              We're a curious bunch, always seeking new knowledge and refining
-              our skills. This ensures we're equipped with the latest tools and
-              strategies to deliver exceptional results.
+              We&apos;re a curious bunch, always seeking new knowledge and
+              refining our skills. This ensures we&apos;re equipped with the
+              latest tools and strategies to deliver exceptional results.
             </div>
           </li>
 
@@ -68,9 +68,9 @@ export default function AboutValues() {
             <span className="text-gray-500 mt-1">•</span>
             <div>
               <strong className="text-gray-900">Leaving Your Mark:</strong>{" "}
-              We're passionate about creating impactful work that goes beyond
-              the ordinary. We craft digital marketing campaigns designed to
-              make a lasting impression and propel your brand forward.
+              We&apos;re passionate about creating impactful work that goes
+              beyond the ordinary. We craft digital marketing campaigns designed
+              to make a lasting impression and propel your brand forward.
             </div>
           </li>
         </ul>

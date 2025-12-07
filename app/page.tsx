@@ -13,8 +13,13 @@ import WebDesignServices from "@/components/WebDesignServices";
 import ClientLogos from "@/components/ClientLogos";
 import ContactUsForm from "@/components/ContactUsForm";
 import WaitingBanner from "@/components/WaitingBanner";
-import LocalMarketing from "@/components/LocalMarketing";
-import LocalBusinessBanner from "@/components/LocalBusinessBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Marketing Agency in Pondicherry | Brandomedia",
+  description:
+    "Brandomedia is a leading digital marketing agency in Pondicherry offering SEO, SMM, Branding, and Web Design services to grow your business.",
+};
 
 export default function Home() {
   return (

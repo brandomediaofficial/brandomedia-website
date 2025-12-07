@@ -5,7 +5,7 @@ export default function ServicesMission() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Brandomedia's
+              Brandomedia&apos;s
               <br />
               Mission
               <br />
@@ -13,17 +13,19 @@ export default function ServicesMission() {
             </h2>
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-6">Empowering Brands, Crafting Impact</h3>
+            <h3 className="text-2xl font-bold mb-6">
+              Empowering Brands, Crafting Impact
+            </h3>
             <div className="space-y-6 text-gray-200 leading-relaxed">
               <p>
-                At Brandomedia, our mission is clear: empower brands to
-                thrive in the digital spotlight. We blend creativity, data, and
+                At Brandomedia, our mission is clear: empower brands to thrive
+                in the digital spotlight. We blend creativity, data, and
                 technology to sculpt impactful narratives that resonate across
                 screens. Our canvas spans from pixel-perfect campaigns to
                 cinematic storytelling.
               </p>
               <p>
-                We don't just create content; we ignite connections. Our
+                We don&apos;t just create content; we ignite connections. Our
                 mission is to be the compass guiding brands toward lasting
                 relevance, measurable results, and a legacy that transcends
                 trends.

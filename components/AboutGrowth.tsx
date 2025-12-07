@@ -11,11 +11,11 @@ export default function AboutGrowth() {
         </h2>
 
         <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
-          At Brandomedia, we're passionate about empowering businesses in
-          Pondicherry to thrive online. We're not just another digital marketing
-          agency; we're a team of award-winning marketing specialists,
-          designers, and developers who leverage cutting-edge technology to
-          craft customized strategies that fuel your success.
+          At Brandomedia, we&apos;re passionate about empowering businesses in
+          Pondicherry to thrive online. We&apos;re not just another digital
+          marketing agency; we&apos;re a team of award-winning marketing
+          specialists, designers, and developers who leverage cutting-edge
+          technology to craft customized strategies that fuel your success.
         </p>
       </div>
     </section>

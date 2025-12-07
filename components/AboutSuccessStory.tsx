@@ -11,18 +11,20 @@ export default function AboutSuccessStory() {
         </h2>
 
         <p className="text-gray-600 leading-relaxed max-w-4xl mx-auto text-sm md:text-base">
-          These aren't just words on a page; they are the foundation of how we
-          approach every project at Brandomedia. When you partner with us, you
-          gain a team that's genuinely invested in your success. We believe that
-          by living our values, we don't just create great work, we help our
-          people thrive and our clients achieve their goals. Brandomedia: We are
-          a team fueled by innovation and driven by a passion for your success.
+          These aren&apos;t just words on a page; they are the foundation of how
+          we approach every project at Brandomedia. When you partner with us,
+          you gain a team that&apos;s genuinely invested in your success. We
+          believe that by living our values, we don&apos;t just create great
+          work, we help our people thrive and our clients achieve their goals.
+          Brandomedia: We are a team fueled by innovation and driven by a
+          passion for your success.
         </p>
       </div>
 
       {/* Full Width Image Placeholder */}
       <div className="w-full h-[400px] md:h-[600px] bg-gray-300 flex items-center justify-center relative overflow-hidden">
         {/* You can replace this src with the actual image URL later */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/birmingham-museums-trust-5EUh-tq31eA-unsplash.jpg"
           alt="Classical Painting representing success and struggle"

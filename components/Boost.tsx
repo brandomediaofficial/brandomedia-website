@@ -37,11 +37,11 @@ export default function Boost() {
                 We blend data-driven methods with industry knowledge to offer
                 targeted customers, increase conversions, and improve brand
                 visibility. Join together with us to take advantage of digital
-                marketing's potential, interact with your audience, and
+                marketing&apos;s potential, interact with your audience, and
                 accomplish your career goals. Our all-inclusive packages will
                 develop your business ahead by increasing its online presence
                 and offering captivating films, a unique brand identity, and
-                easy- to-use websites.
+                easy-to-use websites.
               </p>
             </div>
 

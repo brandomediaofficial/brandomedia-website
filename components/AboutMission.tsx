@@ -6,7 +6,7 @@ export default function AboutMission() {
       {/* Left Side - Blue Background */}
       <div className="w-full md:w-1/2 bg-black p-8 md:p-16 flex flex-col justify-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          Brandomedia's
+          Brandomedia&apos;s
           <br />
           Mission
           <br />
@@ -29,9 +29,9 @@ export default function AboutMission() {
           </p>
 
           <p>
-            We don't just create content; we ignite connections. Our mission is
-            to be the compass guiding brands toward lasting relevance,
-            measurable results, and a legacy that transcends trends.
+            We don&apos;t just create content; we ignite connections. Our
+            mission is to be the compass guiding brands toward lasting
+            relevance, measurable results, and a legacy that transcends trends.
           </p>
 
           <p>

@@ -5,7 +5,6 @@ import {
   Globe,
   ShoppingCart,
   Layout,
-  Code,
   Database,
   Server,
   Search,
@@ -14,7 +13,6 @@ import {
   Settings,
   Shield,
   Smartphone,
-  CheckCircle,
   Zap,
   MousePointerClick,
   Network,
@@ -22,11 +20,9 @@ import {
   Atom,
   FileCode,
   Palette,
-  ShoppingBag,
   Phone,
   MessageSquare,
 } from "lucide-react";
-import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -464,7 +460,7 @@ export default function ServicesPage() {
             strategists, designers, developers, marketers, communications
             specialists, project managers and business developers to work in a
             collaborative manner on our client projects. We build on each
-            other's expertise, working together in teams to generate great
+            other&apos;s expertise, working together in teams to generate great
             outcomes for projects.
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
@@ -520,8 +516,8 @@ export default function ServicesPage() {
               Why Choose Professional Web Designers?
             </h3>
             <p className="leading-relaxed mb-6">
-              Professional web designers transform your digital presence. Here's
-              why they are essential:
+              Professional web designers transform your digital presence.
+              Here&apos;s why they are essential:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
@@ -649,14 +645,15 @@ export default function ServicesPage() {
             No Corner Left Behind: Web Design Solutions for All of Pondicherry.
           </h3>
           <p className="text-slate-600 leading-relaxed max-w-4xl mx-auto">
-            Unleash your Pondicherry brand's potential. We craft stunning
+            Unleash your Pondicherry brand&apos;s potential. We craft stunning
             websites and digital strategies that resonate with local audiences.
             Get online, get noticed, get growing. Web design that tells your
             story. Serving all of Pondicherry, we create beautiful,
-            user-friendly websites that convert visitors into customers. Let's
-            build something amazing together. Your one-stop shop for a thriving
-            online presence. From Auroville to Mahe, our Pondicherry web design
-            experts deliver results-driven websites that elevate your brand.
+            user-friendly websites that convert visitors into customers.
+            Let&apos;s build something amazing together. Your one-stop shop for
+            a thriving online presence. From Auroville to Mahe, our Pondicherry
+            web design experts deliver results-driven websites that elevate your
+            brand.
           </p>
         </div>
       </section>

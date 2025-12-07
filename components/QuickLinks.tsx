@@ -11,7 +11,7 @@ export default function QuickLinks() {
 
         <div className="flex flex-col md:flex-row items-center gap-8 w-full justify-center">
           <h2 className="text-xl font-bold text-center md:text-right max-w-xs leading-tight">
-            Quick Links so you don't waste a second
+            Quick Links so you don&apos;t waste a second
           </h2>
 
           <div className="flex gap-8 md:gap-12 flex-wrap justify-center">

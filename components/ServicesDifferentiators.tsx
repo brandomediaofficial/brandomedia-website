@@ -18,26 +18,26 @@ export default function ServicesDifferentiators() {
               <li className="flex gap-3">
                 <span className="text-blue-400 font-bold">•</span>
                 <div>
-                  <strong className="text-white">Expert Collaboration:</strong> Our team of 20+ specialists works
-                  together seamlessly, leveraging each other's strengths to
-                  create a holistic digital marketing approach for your
-                  business.
+                  <strong className="text-white">Expert Collaboration:</strong>{" "}
+                  Our team of 20+ specialists works together seamlessly,
+                  leveraging each other&apos;s strengths to create a holistic
+                  digital marketing approach for your business.
                 </div>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-400 font-bold">•</span>
                 <div>
-                  <strong className="text-white">Data-Driven Decisions:</strong> We don't just guess - we use data
-                  insights to inform every step of your campaign, ensuring
-                  maximum impact.
+                  <strong className="text-white">Data-Driven Decisions:</strong>{" "}
+                  We don&apos;t just guess - we use data insights to inform
+                  every step of your campaign, ensuring maximum impact.
                 </div>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-400 font-bold">•</span>
                 <div>
-                  <strong className="text-white">Proven Track Record:</strong> We have a history of success in
-                  helping businesses achieve their goals. Let us show you
-                  the Brandomedia difference!
+                  <strong className="text-white">Proven Track Record:</strong>{" "}
+                  We have a history of success in helping businesses achieve
+                  their goals. Let us show you the Brandomedia difference!
                 </div>
               </li>
             </ul>

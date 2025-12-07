@@ -24,7 +24,7 @@ export default function AboutDifferentiators() {
             <div>
               <strong className="text-gray-900">Expert Collaboration:</strong>{" "}
               Our team of 20+ specialists works together seamlessly, leveraging
-              each other's strengths to create a holistic digital marketing
+              each other&apos;s strengths to create a holistic digital marketing
               approach for your business.
             </div>
           </li>
@@ -33,8 +33,8 @@ export default function AboutDifferentiators() {
             <span className="text-gray-500 mt-1">•</span>
             <div>
               <strong className="text-gray-900">Data-Driven Decisions:</strong>{" "}
-              We don't just guess - we use data insights to inform every step of
-              your campaign, ensuring maximum impact.
+              We don&apos;t just guess - we use data insights to inform every
+              step of your campaign, ensuring maximum impact.
             </div>
           </li>
 

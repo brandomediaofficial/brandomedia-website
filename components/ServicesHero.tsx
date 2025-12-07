@@ -10,10 +10,10 @@ export default function ServicesHero() {
             Marketing For Driving Business Growth
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl leading-relaxed">
-            At Brandomedia, we're not just a digital marketing agency - we're your
-            growth partner. Our passionate team of 20+ experts combines their diverse
-            skills and experience to craft powerful digital strategies that deliver real
-            results.
+            At Brandomedia, we&apos;re not just a digital marketing agency -
+            we&apos;re your growth partner. Our passionate team of 20+ experts
+            combines their diverse skills and experience to craft powerful
+            digital strategies that deliver real results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
@@ -25,7 +25,7 @@ export default function ServicesHero() {
           </div>
         </div>
       </div>
-      
+
       {/* Background overlay/texture if needed */}
       <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
     </section>

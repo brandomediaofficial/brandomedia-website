@@ -37,8 +37,7 @@ export default function ContactUsForm() {
     },
   });
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log("Form Data:", data);
+  const onSubmit: SubmitHandler<FormValues> = () => {
     // Handle form submission here (e.g., send to API)
     alert("Form submitted successfully! (Check console for data)");
   };
@@ -65,7 +64,7 @@ export default function ContactUsForm() {
           <p className="text-gray-300 text-lg leading-relaxed">
             Ready to take your brand to the next level?{" "}
             <br className="hidden md:block" />
-            Fill out the form below and we'll get back to you shortly.
+            Fill out the form below and we&apos;ll get back to you shortly.
           </p>
         </div>
 
@@ -131,7 +130,7 @@ export default function ContactUsForm() {
 
             <div className="space-y-3">
               <label className="text-sm font-semibold text-gray-300 ml-1">
-                I'm interested in...
+                I&apos;m interested in...
               </label>
               <div className="flex flex-wrap gap-3">
                 {services.map((service, index) => (

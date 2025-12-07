@@ -7,18 +7,18 @@ export default function ClientLogos() {
   // Using text placeholders for now as we don't have the actual logo assets
   // In a real implementation, these would be Image components
   const clients = [
-    "hullabalu",
-    "RENE.E Laboratory",
-    "iWAY",
-    "Reliance Foundation",
-    "TWO WHEELERS FOR RENTAL",
-    "YFT",
-    "ONE STOP Publishing Solution",
-    "m",
-    "TechNova Solutions",
-    "GreenLeaf Organics",
-    "Urban Bites Cafe",
-    "PixelPerfect Studios",
+    "Travel Stays",
+    "Sadhisha Worldwide",
+    "Purple Resorts",
+    "Digicloud",
+    "Globemart",
+    "Travel Packages",
+    "sapcezad",
+    "Starlite Resorts",
+    "Auro Architects",
+    "The Wander Inn",
+    "Workathive",
+    "Rapid Construction",
     "BlueWave Logistics",
     "Sunrise Health Care",
     "Elite Fitness Pro",
@@ -34,16 +34,16 @@ export default function ClientLogos() {
   // But for the state 'page', we let it grow/shrink to track direction
   const itemIndex = ((page % totalPages) + totalPages) % totalPages;
 
+  const paginate = (newDirection: number) => {
+    setPage([page + newDirection, newDirection]);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       paginate(1);
     }, 3000);
     return () => clearInterval(interval);
-  }, [page]); // Depend on page to reset timer on change
-
-  const paginate = (newDirection: number) => {
-    setPage([page + newDirection, newDirection]);
-  };
+  }, [page]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentClients = clients.slice(
     itemIndex * itemsPerPage,

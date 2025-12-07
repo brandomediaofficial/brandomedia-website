@@ -56,7 +56,7 @@ export default function AboutCompanyOverview() {
             - yes, no, and WOW!
           </h3>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-            Wow is the one we aim for"
+            Wow is the one we aim for&quot;
           </h2>
         </div>
 
