@@ -84,6 +84,7 @@ export default function RootLayout({
         <script src="https://t.contentsquare.net/uxa/6933a73a2e509.js"></script>
       </head>
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <script
