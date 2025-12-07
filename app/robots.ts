@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://www.brandomedia.com/sitemap.xml",
+    sitemap: "https://www.brandomedia.in/sitemap.xml",
   };
 }

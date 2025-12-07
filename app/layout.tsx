@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.brandomedia.com"),
+  metadataBase: new URL("https://www.brandomedia.in"),
   title: {
     default: "Brandomedia – Digital Marketing Agency",
     template: "%s | Brandomedia",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.brandomedia.com",
+    url: "https://www.brandomedia.in",
     title: "Brandomedia – Digital Marketing Agency",
     description:
       "Brandomedia offers digital marketing, branding, social media management, ads, and website development services to grow your business.",
@@ -49,14 +49,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "./",
   },
+  verification: {
+    google: "62h-wuDuIwjbl60FpaJJ8w066tz33t269yQmqAH6rQg",
+  },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Brandomedia",
-  url: "https://www.brandomedia.com",
-  logo: "https://www.brandomedia.com/images/globe.svg",
+  url: "https://www.brandomedia.in",
+  logo: "https://www.brandomedia.in/images/globe.svg",
   description:
     "Brandomedia offers digital marketing, branding, social media management, ads, and website development services.",
   contactPoint: {
@@ -76,6 +79,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${
+                process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || "G-XXXXXXXXXX"
+              }', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
