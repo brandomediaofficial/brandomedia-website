@@ -37,9 +37,47 @@ export default function ContactUsForm() {
     },
   });
 
-  const onSubmit: SubmitHandler<FormValues> = () => {
-    // Handle form submission here (e.g., send to API)
-    alert("Form submitted successfully! (Check console for data)");
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [submitStatus, setSubmitStatus] = React.useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
+
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitStatus({
+          success: true,
+          message: "Thank you! Your message has been sent successfully.",
+        });
+        // Optional: Reset form
+        // reset();
+      } else {
+        const result = await response.json();
+        setSubmitStatus({
+          success: false,
+          message: result.error || "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: "Network error. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -161,14 +199,27 @@ export default function ContactUsForm() {
               ></textarea>
             </div>
 
-            <div className="pt-4 text-center">
+            <div className="pt-4 text-center space-y-4">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-200 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-white/20"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center gap-2 bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-200 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-white/20 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
-                <Send className="w-4 h-4" />
+                {isSubmitting ? "Sending..." : "Send Message"}
+                {!isSubmitting && <Send className="w-4 h-4" />}
               </button>
+
+              {submitStatus && (
+                <div
+                  className={`p-4 rounded-lg font-medium text-sm ${
+                    submitStatus.success
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
+                  {submitStatus.message}
+                </div>
+              )}
             </div>
           </form>
         </div>
