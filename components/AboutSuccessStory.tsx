@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 
 export default function AboutSuccessStory() {
   return (
@@ -24,17 +24,11 @@ export default function AboutSuccessStory() {
       {/* Full Width Image Placeholder */}
       <div className="w-full h-[400px] md:h-[600px] bg-gray-300 flex items-center justify-center relative overflow-hidden">
         {/* You can replace this src with the actual image URL later */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/images/birmingham-museums-trust-5EUh-tq31eA-unsplash.jpg"
           alt="Classical Painting representing success and struggle"
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            e.currentTarget.style.display = "none";
-            e.currentTarget.parentElement!.classList.add("bg-gray-200");
-            e.currentTarget.parentElement!.innerText =
-              "Classical Painting Image Placeholder";
-          }}
+          fill
+          className="object-cover"
         />
       </div>
     </section>

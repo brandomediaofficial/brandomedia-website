@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Monitor,
   Globe,
@@ -55,11 +56,12 @@ export default function ServicesPage() {
           </div>
           <div className="relative">
             {/* Placeholder for the lady image - using a professional stock photo */}
-            <div className="relative z-10">
-              <img
+            <div className="relative z-10 w-full max-w-md mx-auto h-[300px]">
+              <Image
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2672&auto=format&fit=crop"
                 alt="Web Developer"
-                className="rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover h-[300px]"
+                fill
+                className="rounded-lg shadow-2xl object-cover"
               />
             </div>
             {/* Decorative elements from the design */}
@@ -120,47 +122,52 @@ export default function ServicesPage() {
           {/* 3D Carousel Simulation */}
           <div className="relative h-[400px] md:h-[500px] flex items-center justify-center perspective-1000">
             {/* Center Item */}
-            <div className="absolute z-30 w-[60%] md:w-[40%] transition-transform duration-500 hover:scale-105 cursor-pointer shadow-2xl rounded-lg overflow-hidden border-4 border-white">
-              <img
+            <div className="absolute z-30 w-[60%] md:w-[40%] h-[200px] md:h-[300px] transition-transform duration-500 hover:scale-105 cursor-pointer shadow-2xl rounded-lg overflow-hidden border-4 border-white">
+              <Image
                 src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=2574&auto=format&fit=crop"
                 alt="Project Center"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 
             {/* Left Item */}
-            <div className="absolute z-20 w-[50%] md:w-[35%] -translate-x-[60%] scale-90 opacity-80 shadow-xl rounded-lg overflow-hidden border-2 border-white">
-              <img
+            <div className="absolute z-20 w-[50%] md:w-[35%] h-[180px] md:h-[260px] -translate-x-[60%] scale-90 opacity-80 shadow-xl rounded-lg overflow-hidden border-2 border-white">
+              <Image
                 src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2670&auto=format&fit=crop"
                 alt="Project Left"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 
             {/* Right Item */}
-            <div className="absolute z-20 w-[50%] md:w-[35%] translate-x-[60%] scale-90 opacity-80 shadow-xl rounded-lg overflow-hidden border-2 border-white">
-              <img
+            <div className="absolute z-20 w-[50%] md:w-[35%] h-[180px] md:h-[260px] translate-x-[60%] scale-90 opacity-80 shadow-xl rounded-lg overflow-hidden border-2 border-white">
+              <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
                 alt="Project Right"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 
             {/* Far Left Item */}
-            <div className="absolute z-10 w-[40%] md:w-[30%] -translate-x-[110%] scale-75 opacity-60 shadow-lg rounded-lg overflow-hidden">
-              <img
+            <div className="absolute z-10 w-[40%] md:w-[30%] h-[150px] md:h-[220px] -translate-x-[110%] scale-75 opacity-60 shadow-lg rounded-lg overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2670&auto=format&fit=crop"
                 alt="Mobile UI Far Left"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 
             {/* Far Right Item */}
-            <div className="absolute z-10 w-[40%] md:w-[30%] translate-x-[110%] scale-75 opacity-60 shadow-lg rounded-lg overflow-hidden">
-              <img
+            <div className="absolute z-10 w-[40%] md:w-[30%] h-[150px] md:h-[220px] translate-x-[110%] scale-75 opacity-60 shadow-lg rounded-lg overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
                 alt="Project Far Right"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { Headset, MessageCircle, MessageSquare, Play } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Our Portfolio | Brandomedia",
@@ -108,11 +109,12 @@ export default function Portfolio() {
                   {/* Laptop Mockup Placeholder */}
                   <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
                     <div className="w-3/4 h-3/4 bg-gray-800 rounded-t-lg border-4 border-gray-300 border-b-0 relative">
-                      <div className="absolute inset-2 bg-white overflow-hidden">
-                        <img
+                      <div className="absolute inset-2 bg-white overflow-hidden relative">
+                        <Image
                           src={item.image}
                           alt={`Project ${item.title}`}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
                         />
                       </div>
                     </div>
@@ -190,10 +192,11 @@ export default function Portfolio() {
                 className="min-w-[85vw] md:min-w-[500px] snap-center flex-shrink-0"
               >
                 <div className="bg-black rounded-xl shadow-xl overflow-hidden aspect-video relative group cursor-pointer">
-                  <img
+                  <Image
                     src={item.image}
                     alt={`Video Project ${item.title}`}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
+                    fill
+                    className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">

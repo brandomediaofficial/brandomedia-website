@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function CareersClient() {
   const handleScrollToPositions = () => {
     const positionsSection = document.getElementById("available-positions");
@@ -57,11 +59,12 @@ export default function CareersClient() {
             </button>
           </div>
 
-          <div className="relative">
-            <img
+          <div className="relative h-[300px] w-full">
+            <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
               alt="Team collaboration"
-              className="rounded-lg shadow-2xl"
+              fill
+              className="rounded-lg shadow-2xl object-cover"
             />
           </div>
         </div>
@@ -82,11 +85,12 @@ export default function CareersClient() {
             </p>
           </div>
 
-          <div>
-            <img
+          <div className="relative h-[300px] w-full">
+            <Image
               src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop"
               alt="Team working together"
-              className="rounded-lg shadow-xl"
+              fill
+              className="rounded-lg shadow-xl object-cover"
             />
           </div>
         </div>
@@ -95,11 +99,12 @@ export default function CareersClient() {
       {/*CTA Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img
+          <div className="relative h-[300px] w-full">
+            <Image
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop"
               alt="Team collaboration"
-              className="rounded-lg shadow-xl"
+              fill
+              className="rounded-lg shadow-xl object-cover"
             />
           </div>
 

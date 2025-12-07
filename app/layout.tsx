@@ -51,6 +51,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "62h-wuDuIwjbl60FpaJJ8w066tz33t269yQmqAH6rQg",
+    other: {
+      "msvalidate.01": "FD3AAED33FDE09D73293248BADF37772",
+    },
   },
 };
 
@@ -81,7 +84,7 @@ export default function RootLayout({
       >
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-V2D43DR96J"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -89,9 +92,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${
-                process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || "G-XXXXXXXXXX"
-              }', {
+              gtag('config', 'G-V2D43DR96J', {
                 page_path: window.location.pathname,
               });
             `,
