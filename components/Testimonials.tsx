@@ -1,15 +1,15 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      company: "Travel Stays",
+      company: "Travel Site",
       text: "Brandomedia developed a high-quality hotel booking app for us, setting a new standard for user experience. Their work has been instrumental in our franchise's success, and their team is incredibly supportive and effective.",
     },
     {
-      company: "Sadhisha",
+      company: "Property Site",
       text: "We needed a robust property selling platform, and Brandomedia delivered perfectly with advanced features. Their development and marketing strategies are effective, and the team genuinely cares about our success.",
     },
     {
-      company: "Starlite Resorts",
+      company: "Hotel Site",
       text: "Brandomedia designed and built our hotel booking website, which has significantly boosted our business. Their digital marketing strategies are effective, and the team is friendly and responsive.",
     },
   ];
