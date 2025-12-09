@@ -46,9 +46,14 @@ export default function Navbar() {
                 +91-7548880026
               </span>
             </div>
-            <button className="bg-black text-white border border-white px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-white hover:text-black transition-colors font-semibold text-xs md:text-sm whitespace-nowrap">
+            <a
+              href="https://wa.me/917548880026?text=Hi,%20I%20would%20like%20to%20request%20a%20quote."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black text-white border border-white px-3 py-1.5 md:px-5 md:py-2 rounded hover:bg-white hover:text-black transition-colors font-semibold text-xs md:text-sm whitespace-nowrap"
+            >
               Request a Free Quote
-            </button>
+            </a>
           </div>
         </div>
       </div>
