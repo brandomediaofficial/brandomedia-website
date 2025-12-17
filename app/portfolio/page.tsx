@@ -1,6 +1,10 @@
 import { Headset, MessageCircle, MessageSquare, Play } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import port1 from "./images/port1.jpeg";
+import port2 from "./images/port2.jpeg";
+import port3 from "./images/port3.jpeg";
+import port4 from "./images/port4.jpeg";
 
 export const metadata: Metadata = {
   title: "Our Portfolio | Brandomedia",
@@ -9,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function Portfolio() {
+  console.log("Port1:", port1);
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -78,26 +83,22 @@ export default function Portfolio() {
             {[
               {
                 id: 1,
-                image:
-                  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+                image: port3,
                 title: "E-Commerce Platform",
               },
               {
                 id: 2,
-                image:
-                  "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=800&auto=format&fit=crop",
+                image: port4,
                 title: "Corporate Website",
               },
               {
                 id: 3,
-                image:
-                  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop",
+                image: port2,
                 title: "Design System",
               },
               {
                 id: 4,
-                image:
-                  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
+                image: port1,
                 title: "Tech Blog",
               },
             ].map((item) => (
@@ -108,17 +109,12 @@ export default function Portfolio() {
                 <div className="bg-white rounded-xl shadow-xl overflow-hidden aspect-[16/10] relative group">
                   {/* Laptop Mockup Placeholder */}
                   <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                    <div className="w-3/4 h-3/4 bg-gray-800 rounded-t-lg border-4 border-gray-300 border-b-0 relative">
-                      <div className="absolute inset-2 bg-white overflow-hidden relative">
-                        <Image
-                          src={item.image}
-                          alt={`Project ${item.title}`}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div className="absolute bottom-[12.5%] w-[85%] h-3 bg-gray-300 rounded-b-lg"></div>
+                    <Image
+                      src={item.image}
+                      alt={`Project ${item.title}`}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors pointer-events-none" />
                 </div>

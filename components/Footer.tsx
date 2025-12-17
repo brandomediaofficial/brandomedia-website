@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaCalendarAlt,
   FaDollarSign,
@@ -40,10 +41,14 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-12 text-sm">
             {/* Column 1: Brand & CTA */}
             <div className="space-y-6">
-              <div className="border-2 border-[black] rounded-lg p-2 inline-block">
-                <h3 className="text-2xl font-bold text-[black] tracking-widest uppercase">
-                  BRANDOMEDIA
-                </h3>
+              <div className="inline-block">
+                <Image
+                  src="/images/logo/footlogo1.png"
+                  alt="Brandomedia Logo"
+                  width={150}
+                  height={100}
+                  className="object-contain"
+                />
               </div>
 
               <p className="text-gray-600 leading-relaxed">
@@ -131,7 +136,7 @@ export default function Footer() {
               </div>
 
               <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-xs font-semibold text-gray-700 text-left md:text-right w-full md:w-auto">
-                <Link href="#" className="hover:text-[black]">
+                <Link href="/privacy-policy" className="hover:text-[black]">
                   Privacy Policy
                 </Link>
                 <Link href="#" className="hover:text-[black]">

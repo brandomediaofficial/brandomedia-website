@@ -32,6 +32,15 @@ export const metadata: Metadata = {
     "Professional web development, digital marketing, and branding services in Pondicherry. Elevate your business with Brandomedia.",
 };
 
+interface Project {
+  title: string;
+  desc: string;
+  image: string;
+  reverse: boolean;
+  link: string;
+  subtitle?: string;
+}
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans">
@@ -377,35 +386,32 @@ export default function ServicesPage() {
             {
               title: "Travel Stays",
               desc: "Travel Stays is a hotel booking website that offers a wide range of hotel options to its users. The website is designed to be user-friendly and easy to navigate, with a focus on providing a seamless booking experience.",
-              image: "../images/travelstays.png",
+              image: "../images/port1.jpeg",
               reverse: true,
               link: "https://travelstays.world",
             },
             {
               title: "Sadhisha Worldwide",
               desc: "Sadhisha Worldwide is a premier property and land selling platform committed to helping clients find their perfect plot. The website offers a seamless browsing experience for diverse real estate listings, ensuring transparency and ease in every transaction.",
-              image: "../images/sadhisha.png",
+              image: "../images/port2.jpeg",
               reverse: false,
               link: "https://sadhishaworldwide.in",
             },
             {
-              title: "WAY TO FLY",
-              subtitle: "MADE JUST FOR YOU",
-              desc: "Free yourselves from the regular table and chair layout and enjoy our amphitheatre like seating",
-              image:
-                "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2621&auto=format&fit=crop",
+              title: "Starlite hotel",
+              desc: "A luxury hotel website designed to showcase premium accommodations and amenities. We integrated a seamless booking engine and immersive visual galleries to enhance guest engagement and drive direct reservations.",
+              image: "../images/port3.jpeg",
               reverse: true,
-              link: "#",
+              link: "https://starliteresorts.in/",
             },
             {
-              title: "Build Tech",
-              desc: "For the successful execution of a project, effective planning is essential Our team ensure the building continues to operate in accordance with its design.",
-              image:
-                "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2689&auto=format&fit=crop",
+              title: "Medical",
+              desc: "A comprehensive digital platform for a healthcare provider, featuring patient-centric design, appointment scheduling, and doctor profiles. Our solution ensures accessibility and builds trust with prospective patients.",
+              image: "../images/port4.jpeg",
               reverse: false,
-              link: "#",
+              link: "https://rscarefoundation.in/",
             },
-          ].map((project, index) => (
+          ].map((project: Project, index) => (
             <div
               key={index}
               className={`grid md:grid-cols-2 gap-12 items-center ${

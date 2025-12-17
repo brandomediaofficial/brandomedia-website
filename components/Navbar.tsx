@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -15,16 +16,17 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="border-2 border-white rounded p-1 px-2">
-              <h1 className="text-xl md:text-2xl font-bold tracking-widest uppercase font-sans">
-                Brando
-              </h1>
-              <p className="text-[0.5rem] md:text-[0.6rem] text-center tracking-[0.3em] uppercase -mt-1">
-                media
-              </p>
-            </div>
+            <Link href="/">
+              <Image
+                src="/images/logo/navlogo3.png"
+                alt="Brandomedia Logo"
+                width={150}
+                height={80}
+                className="object-contain"
+                priority
+              />
+            </Link>
           </div>
-
           {/* Phone and Button */}
           <div className="flex items-center gap-4 md:gap-6">
             <div className="hidden sm:flex items-center gap-2">
