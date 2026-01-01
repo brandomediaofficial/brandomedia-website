@@ -1,10 +1,10 @@
 import { Headset, MessageCircle, MessageSquare, Play } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
-import port1 from "./images/port1.jpeg";
-import port2 from "./images/port2.jpeg";
-import port3 from "./images/port3.jpeg";
-import port4 from "./images/port4.jpeg";
+import port1 from "../../public/images/portfolio/port1.jpeg";
+import port2 from "../../public/images/portfolio/port2.jpeg";
+import port3 from "../../public/images/portfolio/port3.jpeg";
+import port4 from "../../public/images/portfolio/port4.jpeg";
 
 export const metadata: Metadata = {
   title: "Our Portfolio | Brandomedia",

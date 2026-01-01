@@ -50,7 +50,7 @@ export default function BrandingServices() {
           {/* Image Side */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
-              src="/images/branding_services.webp"
+              src="/images/branding.avif"
               alt="Branding Services"
               fill
               className="object-cover"

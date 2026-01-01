@@ -11,7 +11,7 @@ export default function CareersClient() {
   };
 
   const handleApply = (position: string) => {
-    window.location.href = `mailto:info@brandomedia.com?subject=Application for ${position}`;
+    window.location.href = `mailto:contact@brandomedia.in?subject=Application for ${position}`;
   };
 
   return (

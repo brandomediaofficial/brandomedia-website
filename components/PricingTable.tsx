@@ -67,73 +67,128 @@ export default function PricingTable() {
       isPopular: false,
     },
   ];
-
-  const digitalMarketingPlans = [
+  const mobileAppPlans = [
     {
-      name: "Starter Social Media Package",
-      price: "₹4,999 / month",
-      description: "Great for small business presence.",
+      name: "Basic Business App",
+      subtitle: "(Starter)",
+      price: "₹25,000 – ₹40,000",
+      description:
+        "Ideal for small businesses to showcase products & receive enquiries.",
       features: [
-        "8 Posts per Month",
-        "Basic Captions",
-        "Hashtag Research",
-        "Page Setup / Optimization",
-        "Monthly Report",
+        "Android App (React Native)",
+        "Product / Service Listing",
+        "Contact & Enquiry Form",
+        "Call & WhatsApp Integration",
+        "Basic Admin Panel",
+        "Play Store Build Support",
+        "1 Revision",
+        "Delivery: 7–10 Days",
       ],
-      bestFor: "Small businesses and beginners.",
+      bestFor: "Local businesses, service providers.",
       isPopular: false,
     },
     {
-      name: "Growth Social Media Package",
-      subtitle: "(Most Selected)",
-      price: "₹9,999 – ₹14,999 / month",
-      description: "Boost your brand visibility & engagement.",
+      name: "Standard Mobile App",
+      subtitle: "(Most Popular)",
+      price: "₹45,000 – ₹70,000",
+      description: "Professional app with backend & admin control.",
       features: [
-        "12–16 Posts per Month",
-        "4 Reels per Month",
-        "Creative Content",
-        "Post Scheduling",
-        "Community Management",
-        "Monthly Report + Insights",
-        "1 Ad Campaign Setup (Exclusive)",
+        "Android App (iOS optional)",
+        "Dynamic Product Management",
+        "Backend API + Database",
+        "Admin Dashboard",
+        "Push Notifications",
+        "Google Maps Integration",
+        "3 Revisions",
+        "Delivery: 15–20 Days",
       ],
-      bestFor: "Restaurants, salons, retail, creators.",
+      bestFor: "Growing businesses, brands.",
       isPopular: true,
     },
     {
-      name: "Performance Marketing Package",
-      price: "₹14,999 – ₹29,999 / month",
-      description: "For serious business growth.",
+      name: "Advanced / E-Commerce App",
+      subtitle: "",
+      price: "₹80,000 – ₹1,50,000+",
+      description: "Complete app for online selling & scaling business.",
       features: [
-        "12–20 Posts",
-        "4–8 Reels",
-        "Google Ads Management",
-        "Meta Ads (Facebook + Instagram)",
-        "Lead Generation Campaigns",
-        "Advanced Analytics",
-        "Competitor Research",
-        "Strategy + Consultation",
+        "Android + iOS App",
+        "User Login / Signup",
+        "Online Orders & Payments",
+        "Order Tracking",
+        "Admin Dashboard",
+        "Analytics & Reports",
+        "Security Best Practices",
+        "Delivery: 30–45 Days",
       ],
-      bestFor: "E-commerce, corporates, real estate.",
-      isPopular: false,
-    },
-    {
-      name: "SEO Packages",
-      price: "₹7,999 – ₹19,999 / month",
-      description: "",
-      features: [
-        "Keyword Research",
-        "On-Page SEO",
-        "Technical SEO",
-        "Blog Optimization",
-        "Local SEO for Pondicherry + Chennai",
-        "Backlinks",
-        "Monthly Reports",
-      ],
-      bestFor: "",
+      bestFor: "E-commerce, startups, enterprises.",
       isPopular: false,
     },
   ];
+
+const digitalMarketingPlans = [
+  {
+    name: "Starter Social Media",
+    price: "₹3,999 / month",
+    description: "Basic online presence for small local businesses.",
+    features: [
+      "8 Posts per Month",
+      "Basic Captions",
+      "Hashtag Research",
+      "Facebook & Instagram Page Setup",
+      "Monthly Performance Report",
+    ],
+    bestFor: "Small shops, local services, beginners",
+    isPopular: false,
+  },
+  {
+    name: "Growth Social Media",
+    subtitle: "(Most Selected)",
+    price: "₹6,999 / month",
+    description: "Grow reach, engagement & enquiries steadily.",
+    features: [
+      "12 Posts per Month",
+      "4 Reels per Month",
+      "Creative Captions & Hashtags",
+      "Post Scheduling",
+      "Basic Community Management",
+      "Monthly Report + Insights",
+      "Ad Campaign Setup (Ad budget extra)",
+    ],
+    bestFor: "Salons, gyms, restaurants, rentals",
+    isPopular: true,
+  },
+  {
+    name: "Performance Marketing",
+    price: "₹11,999 / month",
+    description: "Lead-focused marketing for serious growth.",
+    features: [
+      "12 Posts + 6 Reels",
+      "Meta Ads (Facebook & Instagram)",
+      "Lead Generation Campaign",
+      "Audience Targeting",
+      "Weekly Optimization",
+      "Lead & Conversion Report",
+    ],
+    bestFor: "Service businesses & growing brands",
+    isPopular: false,
+  },
+  {
+    name: "SEO Package",
+    price: "₹6,999 / month",
+    description: "Improve Google ranking & local visibility.",
+    features: [
+      "Keyword Research",
+      "On-Page SEO",
+      "Technical SEO (Basic)",
+      "Google Business Profile Optimization",
+      "Local SEO (Pondicherry / Chennai)",
+      "Monthly SEO Report",
+    ],
+    bestFor: "Local businesses & service providers",
+    isPopular: false,
+  },
+];
+
 
   const addOns = [
     { name: "Logo Design", price: "₹1,999 – ₹4,999" },
@@ -203,6 +258,79 @@ export default function PricingTable() {
                     <p className="text-sm text-gray-800">{plan.bestFor}</p>
                   </div>
                 </div>
+                <div className="p-8 pt-0 mt-auto">
+                  <button
+                    onClick={handleScrollToContact}
+                    className="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition-colors"
+                  >
+                    👉 Get Quote
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile App Development Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold uppercase mb-4 text-black">
+              Mobile App Development Pricing
+            </h2>
+            <div className="w-24 h-1 bg-black mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {mobileAppPlans.map((plan, index) => (
+              <div
+                key={index}
+                className={`bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-xl flex flex-col ${
+                  plan.isPopular
+                    ? "border-black shadow-lg scale-105 z-10 relative"
+                    : "border-gray-200"
+                }`}
+              >
+                {plan.isPopular && (
+                  <div className="bg-black text-white text-center py-2 text-sm font-bold uppercase">
+                    Most Popular
+                  </div>
+                )}
+
+                <div className="p-8 flex-grow">
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    {plan.name}
+                  </h3>
+                  {plan.subtitle && (
+                    <p className="text-sm text-gray-600 font-semibold mb-4">
+                      {plan.subtitle}
+                    </p>
+                  )}
+
+                  <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    {plan.price}
+                  </div>
+
+                  <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                    {plan.description}
+                  </p>
+
+                  <div className="space-y-3 mb-8">
+                    {plan.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-green-500 mt-0.5" />
+                        <span className="text-gray-700 text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-xs font-bold text-gray-500 uppercase mb-1">
+                      Best For:
+                    </p>
+                    <p className="text-sm text-gray-800">{plan.bestFor}</p>
+                  </div>
+                </div>
+
                 <div className="p-8 pt-0 mt-auto">
                   <button
                     onClick={handleScrollToContact}

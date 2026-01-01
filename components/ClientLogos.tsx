@@ -7,22 +7,22 @@ export default function ClientLogos() {
   // Using text placeholders for now as we don't have the actual logo assets
   // In a real implementation, these would be Image components
   const clients = [
-    "Acme Corp",
-    "Global Tech",
-    "Orion Systems",
-    "Vertex Solutions",
-    "Nexus Group",
-    "Zenith Industries",
-    "Horizon Ventures",
-    "Apex Innovations",
-    "Summit Enterprises",
-    "Pinnacle Partners",
-    "Vanguard Logistics",
-    "Beacon Health",
-    "Quantum Dynamics",
-    "Synergy Works",
-    "Meridian Services",
-    "Unity Creations",
+    "Travel Packages",
+    "Sadhisha",
+    "Starlite",
+    "wanderin",
+    "Spacezad",
+    "Work@hive",
+    "Travel Stays",
+    "Globemart",
+    "Digicloud",
+    "Auro Architects",
+    "Sadhish worldwide",
+    "Purple",
+    "Sadhisha interior",
+    "Zostel",
+    "Sadhisha Ai",
+    "Hotel Stays",
   ];
 
   const itemsPerPage = 8;

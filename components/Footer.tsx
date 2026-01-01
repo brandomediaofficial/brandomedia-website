@@ -81,7 +81,7 @@ export default function Footer() {
                 <div>
                   <h4 className="font-bold mb-1">Pondicherry</h4>
                   <p className="text-gray-600">
-                    No 12, illangoadigal street, Mudaliarpet, Puducherry, 605001
+                    No 64, South Boulevard, MG Road Area <br /> Puducherry - 605001
                   </p>
                 </div>
               </div>

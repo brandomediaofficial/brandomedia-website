@@ -50,7 +50,7 @@ export default function DigitalMarketing() {
           {/* Image Side with Purple Gradient Background */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-purple-600 to-purple-800 order-1 md:order-2">
             <Image
-              src="/images/digital_marketing.webp"
+              src="/images/vr.jpg"
               alt="Digital Marketing"
               fill
               className="object-cover"
