@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Brandomedia",
     images: [
       {
-        url: "/images/hero-face.webp",
+        url: "/images/logo/navlogo3.png",
         width: 1200,
         height: 630,
         alt: "Brandomedia Digital Marketing",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Brandomedia – Digital Marketing Agency",
     description:
       "Brandomedia offers digital marketing, branding, social media management, ads, and website development services to grow your business.",
-    images: ["/images/hero-face.webp"],
+    images: ["/images/logo/navlogo3.png"],
   },
   alternates: {
     canonical: "./",
